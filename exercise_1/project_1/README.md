@@ -41,77 +41,162 @@ tar -xzvf osu-micro-benchmarks-7.3.tar.gz
 After loading the necessary modules, it is possible to compile the `osu-micro-benchmarks` tool using the following commands (inside the extracted folder):
 
 ```bash
-./configure CC=mpicc CXX=mpicxx  # Ensure these are the MPI compilers
-make
+$ ./configure CC=mpicc CXX=mpicxx  # Ensure these are the MPI compilers
+$ make
+```
+In order to don't repeat the same commands every time, it is possible to create a script that loads the necessary modules automatically. What was done in my case was to create a script called `.bashrc`:
+
+```bash
+$ echo "module load openMPI/4.1.5/gnu/12.2.1" >> ~/.bashrc
+```
+in which the `openMPI` module it can be loaded with this command:
+
+```bash
+$ source ~/.bashrc
 ```
 
+From here, it is possible to go on with the execution of the benchmarks.
+
+# Execution of the Benchmarks
+
+The `osu-micro-benchmarks` tool provides several benchmarks for different collective operations, including `broadcast`, `gather`, `scatter`, `barrier`, and `reduce`. The performance of collective operations can be evaluated using different algorithms provided by MPI. The performance of collective operations can be affected by factors such as the size of the message, the number of processes, the network topology, and the communication pattern. Therefore, it is important to evaluate the performance of collective operations using different algorithms and to choose the best algorithm based on the specific requirements of the parallel program.
+
+The `osu-micro-benchmarks` tool provides several options to control the execution of the benchmarks, including the number of processes, the size of the message, and the algorithm used for the collective operation. The `osu-micro-benchmarks` tool can be used to measure the latency and bandwidth of collective operations for different message sizes and numbers of processes.
+
+## Broadcast Benchmark
+
+The `broadcast` benchmark measures the performance of the `broadcast` operation in MPI. The `broadcast` operation is a one-to-all communication operation that sends a message from the root process to all other processes in the communicator. The `broadcast` benchmark measures the latency and bandwidth of the `broadcast` operation for different message sizes and numbers of processes.
+
+The `broadcast` benchmark can be executed using the following command:
+
+```bash
+$ mpirun -np <num_processes> osu_bcast
+```
+
+## Reduce Benchmark
+
+The `reduce` benchmark measures the performance of the `reduce` operation in MPI. The `reduce` operation is a many-to-one communication operation that combines data from all processes in the communicator into a single value. The `reduce` benchmark measures the latency and bandwidth of the `reduce` operation for different message sizes and numbers of processes.
+
+The `reduce` benchmark can be executed using the following command:
+
+```bash
+$ mpirun -np <num_processes> osu_reduce
+```
+
+For this project, it will be tested broadcast and reduce. For both, will be tested the latency and bandwidth of the default openMPI implementation, varying the number of processes and the size of the messages exchanged. Then, it will be compared with the values obtained using different algorithms, using 1 (basic_linear), 2 (chain) and 3 (pipeline) algorithms.
+
+### 1. Basic Linear
+
+The `basic_linear` algorithm is a simple algorithm that sends the message from the root process to all other processes in a linear fashion. The `basic_linear` algorithm is a straightforward algorithm that sends the message from the root process to all other processes one by one. The `basic_linear` algorithm is a simple algorithm that is easy to implement and understand.
+
+### 2. Chain
+
+The `chain` algorithm is a more complex algorithm that sends the message from the root process to all other processes in a chain fashion. The `chain` algorithm is a more complex algorithm that sends the message from the root process to all other processes in a chain fashion. The `chain` algorithm is a more complex algorithm that is more efficient than the `basic_linear` algorithm.
+
+### 3. Pipeline
+
+The `pipeline` algorithm is a more complex algorithm that sends the message from the root process to all other processes in a pipeline fashion. The `pipeline` algorithm is a more complex algorithm that sends the message from the root process to all other processes in a pipeline fashion. The `pipeline` algorithm is a more complex algorithm that is more efficient than the `chain` algorithm.
+
+# Execution of the Benchmarks in a HPC Cluster
+
+For the execution of the benchmarks, it is needed to use the `mpirun` command, which is used to launch MPI applications. The `mpirun` command takes several arguments, including the number of processes, the name of the executable, and any additional arguments that need to be passed to the executable. The `mpirun` command is used to launch MPI applications on a cluster of computers, distributing the processes across the available nodes.
+
+The parameters for this project are the following:
+
+* Number of processes: 2, 4, 8, 16, 32, 64, 128, 256 (powers of 2)
+* Message size: 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144, 524288, 1048576
+
+Number of processes will be tested from 2 to 256 (powers of 2), while the message size will be tested from 2 bytes to 1 MB. The benchmarks will be executed using the default openMPI implementation and the `basic_linear`, `chain`, and `pipeline` algorithms for the `broadcast` and `reduce` operations.
+
+The execution of the benchmarks can be done using the following commands:
+
+```bash
+$ mpirun -np <num_processes> osu_bcast -m <message_size> -a 1
+$ mpirun -np <num_processes> osu_bcast -m <message_size> -a 2
+$ mpirun -np <num_processes> osu_bcast -m <message_size> -a 3
+
+$ mpirun -np <num_processes> osu_reduce -m <message_size> -a 1
+$ mpirun -np <num_processes> osu_reduce -m <message_size> -a 2
+$ mpirun -np <num_processes> osu_reduce -m <message_size> -a 3
+```
+
+# Execution of the Benchmarks in the ORFEO Cluster
+
+Since in the ORFEO cluster I don't have the priority, it is important to check and verify every parameters in order to not waste resources and doing the job in the right way. The ORFEO cluster is a shared resource, and it is important to be considerate of other users. 
+
+### 1. Checking Partitions and Nodes Availability
+
+This first check can be done using the command `sinfo` that shows the status of the partitions and nodes in the cluster, including the number of nodes available, the number of nodes in use, and the number of nodes down. 
+
+During the project, the only available partitions were `THIN` and `FAT`. 
+
+|**THIN Nodes** | **FAT Nodes** |
+|---------------|---------------|
+|10 nodes       | 2 nodes       |
+|768 GB of RAM  | 1536 GB of RAM|
+|24 cores       | 36 cores      |
+|1.997 Tflops   | 3.456 Tflops  |
+
+### 2. Job Duration Estimation
+
+It is important to consider a few factors :
+1. Benchmarking Time: How long doeas a single run of the benchmark take? So, it should be run a preliminary test to get this basic timing information. 
+2. Repetitions: How many times will repeat each benchmark to ensure accurate results? We'll want multiple runs to average out any variability.
+3. Algotirhms and Message Size: If we are testing different algorithms and message sizes, we need to account for the time it takes to test each variation.
+4. Data Collection and Analysis Overhead: Consider the time needed to gather results and perfom any on-the-fly analysis or data storage operations.
+5. Buffer Time: Always add some extra time as a buffer to account for enexpected delays, such as the job starting a bit late due to system load or other minor issues. 
 
 
 
 
 
 
+<!-- It is important to estimate the duration of the job in order to not waste resources. The duration of the job can be estimated using the following formula:
 
-# Objectives
-
-The main objectives of this project are:
-
-1. Evaluate the performance of different openMPI algorithms for two different collective operations, `broadcast` and one between `gather`, `scatter`, `barrier`, `reduce`.
-2. Estimate the latency of the default openMPI implementation for the two collective operations, varying the number of processes and the size of the messages exchanged.
-3. Compare the performance of the default openMPI implementation with the performance of different algorithms for the two collective operations.
-4. Analyze the performance of the collective operations using different algorithms and evaluate the impact of factors such as the size of the message, the number of processes, the network topology, and the communication pattern.
-5. Choose the best algorithm for the two collective operations based on the specific requirements of the parallel program.
+```bash
+estimated-time-for-job = (number-of-processes * message-size) / bandwidth
+``` -->
 
 
 
 
 
-# Table of Contents
-## 1.1. Broadcast
+THIN
 
-The first collective operation to be analyzed is the `broadcast`. The `broadcast` operation is a one-to-all communication operation that sends a message from the root process to all other processes in the communicator. The root process is the one that sends the message, while the other processes receive the message. The `broadcast` operation is a blocking operation, meaning that the root process will not continue executing until all other processes have received the message. The `broadcast` operation is commonly used in parallel computing to distribute data to all processes in a parallel program.
+```bash
+#!/bin/bash
+#SBATCH --job-name=bcast-benchmark
+#SBATCH --output=bcast_output_%j.txt
+#SBATCH --error=bcast_error_%j.txt
+#SBATCH --partition=THIN
+#SBATCH --nodes=2
+#SBATCH --ntasks-per-node=24
+#SBATCH --time=<estimated-time-for-job>
+#SBATCH --exclusive
 
-The `broadcast` operation is implemented in MPI using the `MPI_Bcast` function. The `MPI_Bcast` function takes three arguments: the buffer containing the message to be sent, the size of the message in bytes, and the rank of the root process. The `MPI_Bcast` function is called by all processes in the communicator, and the message is sent from the root process to all other processes.
+# Load the necessary modules
+module load openmpi
 
-The `broadcast` operation is a fundamental operation in parallel computing, and it is used in many parallel algorithms and applications. The performance of the `broadcast` operation can have a significant impact on the overall performance of a parallel program. Therefore, it is important to understand the performance characteristics of the `broadcast` operation and to choose the best algorithm for the `broadcast` operation based on the specific requirements of the parallel program.
+# Add your benchmark commands here
+```
 
-## 1.2. Gather
+FAT
 
-The second collective operation to be analyzed is the `gather`. The `gather` operation is a many-to-one communication operation that collects data from all processes in the communicator and sends it to a single process. The `gather` operation is the inverse of the `scatter` operation, which sends data from a single process to all other processes. The `gather` operation is a blocking operation, meaning that all processes must participate in the operation, and the operation will not complete until all processes have sent their data.
+```bash
+#!/bin/bash
+#SBATCH --job-name=bcast-benchmark
+#SBATCH --output=bcast_output_%j.txt
+#SBATCH --error=bcast_error_%j.txt
+#SBATCH --partition=THIN
+#SBATCH --constraint=FAT
+#SBATCH --nodes=2
+#SBATCH --ntasks-per-node=36
+#SBATCH --time=<estimated-time-for-job>
+#SBATCH --exclusive
 
-The `gather` operation is implemented in MPI using the `MPI_Gather` function. The `MPI_Gather` function takes five arguments: the buffer containing the data to be sent, the size of the data in bytes, the data type of the data, the buffer where the data will be received, and the rank of the root process. The `MPI_Gather` function is called by all processes in the communicator, and the data is sent from all processes to the root process.
+# Load the necessary modules
+module load openmpi
 
-The `gather` operation is commonly used in parallel computing to collect data from all processes in a parallel program and combine it into a single data structure. The `gather` operation is used in many parallel algorithms and applications, and the performance of the `gather` operation can have a significant impact on the overall performance of a parallel program. Therefore, it is important to understand the performance characteristics of the `gather` operation and to choose the best algorithm for the `gather` operation based on the specific requirements of the parallel program.
-
-## 1.3. Scatter
-
-The third collective operation to be analyzed is the `scatter`. The `scatter` operation is a one-to-many communication operation that sends data from a single process to all other processes in the communicator. The `scatter` operation is the inverse of the `gather` operation, which collects data from all processes and sends it to a single process. The `scatter` operation is a blocking operation, meaning that all processes must participate in the operation, and the operation will not complete until all processes have received their data.
-
-The `scatter` operation is implemented in MPI using the `MPI_Scatter` function. The `MPI_Scatter` function takes five arguments: the buffer containing the data to be sent, the size of the data in bytes, the data type of the data, the buffer where the data will be received, and the rank of the root process. The `MPI_Scatter` function is called by all processes in the communicator, and the data is sent from the root process to all other processes.
-
-The `scatter` operation is commonly used in parallel computing to distribute data from a single process to all processes in a parallel program. The `scatter` operation is used in many parallel algorithms and applications, and the performance of the `scatter` operation can have a significant impact on the overall performance of a parallel program. Therefore, it is important to understand the performance characteristics of the `scatter` operation and to choose the best algorithm for the `scatter` operation based on the specific requirements of the parallel program.
-
-## 1.4. Barrier
-
-The fourth collective operation to be analyzed is the `barrier`. The `barrier` operation is a synchronization operation that blocks all processes in the communicator until all processes have reached the barrier. The `barrier` operation is a blocking operation, meaning that all processes must participate in the operation, and the operation will not complete until all processes have reached the barrier.
-
-The `barrier` operation is implemented in MPI using the `MPI_Barrier` function. The `MPI_Barrier` function takes one argument: the communicator in which the barrier will be applied. The `MPI_Barrier` function is called by all processes in the communicator, and the operation will not complete until all processes have reached the barrier.
-
-The `barrier` operation is commonly used in parallel computing to synchronize the execution of processes in a parallel program. The `barrier` operation is used to ensure that all processes have reached a certain point in the program before continuing execution. The `barrier` operation is used in many parallel algorithms and applications, and the performance of the `barrier` operation can have a significant impact on the overall performance of a parallel program. Therefore, it is important to understand the performance characteristics of the `barrier` operation and to choose the best algorithm for the `barrier` operation based on the specific requirements of the parallel program.
-
-## 1.5. Reduce
-
-The fifth collective operation to be analyzed is the `reduce`. The `reduce` operation is a many-to-one communication operation that combines data from all processes in the communicator into a single value. The `reduce` operation is the inverse of the `scatter` operation, which sends data from a single process to all other processes. The `reduce` operation is a blocking operation, meaning that all processes must participate in the operation, and the operation will not complete until all processes have sent their data.
-
-The `reduce` operation is implemented in MPI using the `MPI_Reduce` function. The `MPI_Reduce` function takes five arguments: the buffer containing the data to be sent, the buffer where the result will be stored, the size of the data in bytes, the data type of the data, and the reduction operation to be applied. The `MPI_Reduce` function is called by all processes in the communicator, and the data is combined into a single value using the specified reduction operation.
-
-The `reduce` operation is commonly used in parallel computing to combine data from all processes in a parallel program into a single value. The `reduce` operation is used in many parallel algorithms and applications, and the performance of the `reduce` operation can have a significant impact on the overall performance of a parallel program. Therefore, it is important to understand the performance characteristics of the `reduce` operation and to choose the best algorithm for the `reduce` operation based on the specific requirements of the parallel program.
-
-## 1.6. Algorithms
-
-The performance of collective operations in MPI can be significantly affected by the choice of algorithm used to implement the operation. MPI provides several algorithms for each collective operation, and the choice of algorithm can have a significant impact on the performance of the operation. The performance of collective operations can be affected by factors such as the size of the message, the number of processes, the network topology, and the communication pattern.
-
-The performance of collective operations can be evaluated using a well-known MPI benchmark tool, such as `osu-micro-benchmarks`. The `osu-micro-benchmarks` tool provides a set of micro-benchmarks that can be used to evaluate the performance of collective operations in MPI. The `osu-micro-benchmarks` tool provides benchmarks for a wide range of collective operations, including `broadcast`, `gather`, `scatter`, `barrier`, and `reduce`. The `osu-micro-benchmarks` tool can be used to measure the latency and bandwidth of collective operations for different message sizes and numbers of processes.
-
-The performance of collective operations can be evaluated using different algorithms provided by MPI. The performance of collective operations can be affected by factors such as the size of the message, the number of processes, the network topology, and the communication pattern. Therefore, it is important to evaluate the performance of collective operations using different algorithms and to choose the best algorithm based on the specific requirements of the parallel program.
+# Add your benchmark commands here
+```
 
