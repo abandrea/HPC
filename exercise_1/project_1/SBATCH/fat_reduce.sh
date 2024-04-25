@@ -9,7 +9,7 @@
 module load openMPI/4.1.5/gnu/12.2.1
 
 # Define output directory and file
-output_dir="../../../../../HPC_project/HPC/exercise_1/project_1/results/"
+output_dir="../reduce_fat_results/"
 mkdir -p $output_dir
 output_file="${output_dir}fat_reduce_results.csv"
 
@@ -34,7 +34,7 @@ do
         do
             size=$((2**i))
             # Execute osu_reduce with fixed size and varying processes
-            result=$(mpirun --map-by core -np $processes --mca coll_tuned_use_dynamic_rules true --mca coll_tuned_reduce_algorithm $alg osu_reduce -m $size -x $repetitions -i $repetitions | tail -n 1 | awk '{print $2}')
+            result=$(mpirun --map-by core -np $processes --mca coll_tuned_use_dynamic_rules true --mca coll_tuned_reduce_algorithm $alg ../../../../osu-micro-benchmarks-7.3/c/mpi/collective/blocking/osu_reduce -m $size -x $repetitions -i $repetitions | tail -n 1 | awk '{print $2}')
             # Write results to CSV
             echo "${algorithms[$alg]},$processes,$size,$result" >> $output_file
         done
