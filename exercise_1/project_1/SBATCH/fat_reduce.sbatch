@@ -26,9 +26,8 @@ repetitions=1000
 
 for alg in "${!algorithms[@]}"
 do
-    for j in {1..8}
+    for ((processes=2; processes<=72; processes+=2))
     do
-        processes=$((2**j))
         for i in {1..20}
         do
             size=$((2**i))
