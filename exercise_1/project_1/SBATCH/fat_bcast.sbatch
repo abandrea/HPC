@@ -4,10 +4,6 @@
 #SBATCH --ntasks-per-node=36 # Adjust according to your node configuration
 #SBATCH --time=02:00:00
 #SBATCH --partition=THIN
-<<<<<<< HEAD
-=======
-#SBATCH --constraint=fat
->>>>>>> 7ab683302f1f906e06c1ab52820d2136cd1c3900
 #SBATCH --exclusive
 module load openMPI/4.1.5/gnu/12.2.1
 
