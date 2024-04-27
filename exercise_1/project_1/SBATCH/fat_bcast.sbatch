@@ -2,7 +2,7 @@
 #SBATCH --job-name=Bcast_fat_benchmark
 #SBATCH --nodes=2
 #SBATCH --ntasks-per-node=36 # Adjust according to your node configuration
-#SBATCH --time=03:00:00
+#SBATCH --time=02:00:00
 #SBATCH --partition=THIN
 #SBATCH --exclusive
 module load openMPI/4.1.5/gnu/12.2.1
