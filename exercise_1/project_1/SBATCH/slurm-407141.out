@@ -1,0 +1,12 @@
+slurmstepd: error: *** JOB 407141 ON fat001 CANCELLED AT 2024-04-27T05:43:29 DUE TO TIME LIMIT ***
+--------------------------------------------------------------------------
+ORTE has lost communication with a remote daemon.
+
+  HNP daemon   : [[46930,0],0] on node fat001
+  Remote daemon: [[46930,0],1] on node fat002
+
+This is usually due to either a failure of the TCP network
+connection to the node, or possibly an internal failure of
+the daemon itself. We cannot recover from this failure, and
+therefore will terminate the job.
+--------------------------------------------------------------------------
