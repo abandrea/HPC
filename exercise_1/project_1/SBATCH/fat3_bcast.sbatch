@@ -1,0 +1,40 @@
+#!/bin/bash
+#SBATCH --job-name=Bcast_fat_benchmark
+#SBATCH --nodes=2
+#SBATCH --ntasks-per-node=36 # Adjust according to your node configuration
+#SBATCH --time=02:00:00
+#SBATCH --partition=THIN
+#SBATCH --exclusive
+module load openMPI/4.1.5/gnu/12.2.1
+
+# Define output directory and file
+output_dir="../bcast_fat_results/"
+mkdir -p $output_dir
+output_file="${output_dir}fat_bcast_results.csv"
+
+# Header for CSV file
+echo "Algorithm,Processes,Size,Latency" > $output_file
+
+# Algorithms to be tested
+declare -A algorithms
+algorithms[1]="basic_linear"
+algorithms[2]="chain"
+algorithms[3]="pipeline"
+
+# Number of repetitions for average calculation
+repetitions=1000
+
+for alg in "${!algorithms[@]}"
+do
+    for ((processes=2; processes<=72; processes+=2))
+    do
+        for i in {1..20}
+        do
+            size=$((2**i))
+            # Execute osu_bcast with fixed size and varying processes
+            result=$(mpirun --map-by core -np $processes --mca coll_tuned_use_dynamic_rules true --mca coll_tuned_bcast_algorithm 3 ../../../../osu-micro-benchmarks-7.3/c/mpi/collective/blocking/osu_bcast -m $size -x $repetitions -i $repetitions | tail -n 1 | awk '{print $2}')
+            # Write results to CSV
+            echo "${algorithms[$alg]},$processes,$size,$result" >> $output_file
+        done
+    done
+done
