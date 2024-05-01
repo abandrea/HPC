@@ -1,0 +1,26 @@
+[thin007:3577103:0:3577103] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fd7a618416e)
+==== backtrace (tid:3577103) ====
+ 0  /lib64/libucs.so.0(ucs_handle_error+0x2e4) [0x7fd7a40e4794]
+ 1  /lib64/libucs.so.0(+0x29e3d) [0x7fd7a40e5e3d]
+ 2  /lib64/libucs.so.0(+0x2a025) [0x7fd7a40e6025]
+ 3  /lib64/libc.so.6(+0x1691fc) [0x7fd7a7d8c1fc]
+ 4  /opt/programs/openMPI/4.1.5/lib/libopen-pal.so.40(opal_unsetenv+0x6b) [0x7fd7a6d5020b]
+ 5  /opt/programs/openMPI/4.1.5/lib/libmpi.so.40(ompi_mpi_finalize+0x8ea) [0x7fd7a6ee6b0a]
+ 6  /orfeo/cephfs/home/dssc/abuscema/HPC_project/venv/lib64/python3.11/site-packages/mpi4py/MPI.cpython-311-x86_64-linux-gnu.so(+0x7bf12) [0x7fd7a705bf12]
+ 7  /lib64/libpython3.11.so.1.0(+0x1d56e1) [0x7fd7a7fd56e1]
+ 8  /lib64/libpython3.11.so.1.0(_PyObject_MakeTpCall+0x73) [0x7fd7a7fb7c73]
+ 9  /lib64/libpython3.11.so.1.0(_PyEval_EvalFrameDefault+0x7e9) [0x7fd7a7fc0779]
+10  /lib64/libpython3.11.so.1.0(+0x1bc6fa) [0x7fd7a7fbc6fa]
+11  /lib64/libpython3.11.so.1.0(PyEval_EvalCode+0xac) [0x7fd7a80463ac]
+12  /lib64/libpython3.11.so.1.0(+0x264473) [0x7fd7a8064473]
+13  /lib64/libpython3.11.so.1.0(+0x2609fa) [0x7fd7a80609fa]
+14  /lib64/libpython3.11.so.1.0(+0x276752) [0x7fd7a8076752]
+15  /lib64/libpython3.11.so.1.0(_PyRun_SimpleFileObject+0x1a9) [0x7fd7a8075f49]
+16  /lib64/libpython3.11.so.1.0(_PyRun_AnyFileObject+0x48) [0x7fd7a8075be8]
+17  /lib64/libpython3.11.so.1.0(Py_RunMain+0x2eb) [0x7fd7a806f79b]
+18  /lib64/libpython3.11.so.1.0(Py_BytesMain+0x3b) [0x7fd7a803652b]
+19  /lib64/libc.so.6(+0x27550) [0x7fd7a7c4a550]
+20  /lib64/libc.so.6(__libc_start_main+0x89) [0x7fd7a7c4a609]
+21  python(_start+0x25) [0x55cf1f37e095]
+=================================
+/var/spool/slurm/d/job410235/slurm_script: line 16: 3577103 Segmentation fault      (core dumped) python performance_test.py
