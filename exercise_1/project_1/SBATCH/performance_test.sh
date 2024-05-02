@@ -16,11 +16,11 @@ output_file="${output_dir}/performance.csv"
 # Header for csv file
 echo "Size, Avg Latency" > $output_file
 
-do
-    result=$(mpirun -np 2 --map-by core ../../../../osu-micro-benchmarks-7.3/c/mpi/pt2pt/standard/osu_latency)
+# Assuming you want to vary the number of processes in a loop
+for np in {2..48..2}; do  # This loops from 2 to 48 in steps of 2
+    result=$(mpirun -np $np --map-by core ../../../../osu-micro-benchmarks-7.3/c/mpi/pt2pt/standard/osu_latency)
     # write result to csv
     echo $result >> $output_file
 done
 
 echo "Performance test completed"
-
