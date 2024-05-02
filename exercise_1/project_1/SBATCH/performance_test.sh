@@ -16,9 +16,10 @@ output_file="${output_dir}/performance.csv"
 # Header for csv file
 echo "Size, Avg Latency" > $output_file
 
-# Assuming you want to vary the number of processes in a loop
+# Run osu_latency and capture its output
 result=$(mpirun -np 2 --map-by core ../../../../osu-micro-benchmarks-7.3/c/mpi/pt2pt/standard/osu_latency)
-# write result to csv
-echo $result >> $output_file
+
+# Process and write results to csv
+echo "$result" | grep -v '#' | grep -v 'MPI' | awk '{print $1 "," $2}' >> $output_file
 
 echo "Performance test completed"
