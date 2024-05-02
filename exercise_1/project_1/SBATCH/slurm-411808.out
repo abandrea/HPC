@@ -1,0 +1,668 @@
+This test requires exactly two processes
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[12161,1],3]
+  Exit code:    1
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Open MPI failed an OFI Libfabric library call (fi_endpoint).  This is highly
+unusual; your job may behave unpredictably (and/or abort) after this.
+
+  Local host: thin006
+  Location: mtl_ofi_component.c:509
+  Error: Invalid argument (22)
+--------------------------------------------------------------------------
+This test requires exactly two processes
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[12195,1],2]
+  Exit code:    1
+--------------------------------------------------------------------------
+[thin006.hpc.rd.areasciencepark.it:936110] 5 more processes have sent help message help-mtl-ofi.txt / OFI call fail
+[thin006.hpc.rd.areasciencepark.it:936110] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+This test requires exactly two processes
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[12255,1],1]
+  Exit code:    1
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Open MPI failed an OFI Libfabric library call (fi_endpoint).  This is highly
+unusual; your job may behave unpredictably (and/or abort) after this.
+
+  Local host: thin006
+  Location: mtl_ofi_component.c:509
+  Error: Invalid argument (22)
+--------------------------------------------------------------------------
+This test requires exactly two processes
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[11784,1],5]
+  Exit code:    1
+--------------------------------------------------------------------------
+[thin006.hpc.rd.areasciencepark.it:936197] 9 more processes have sent help message help-mtl-ofi.txt / OFI call fail
+[thin006.hpc.rd.areasciencepark.it:936197] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+This test requires exactly two processes
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[11829,1],4]
+  Exit code:    1
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Open MPI failed an OFI Libfabric library call (fi_endpoint).  This is highly
+unusual; your job may behave unpredictably (and/or abort) after this.
+
+  Local host: thin006
+  Location: mtl_ofi_component.c:509
+  Error: Invalid argument (22)
+--------------------------------------------------------------------------
+This test requires exactly two processes
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[11890,1],13]
+  Exit code:    1
+--------------------------------------------------------------------------
+[thin006.hpc.rd.areasciencepark.it:936319] 13 more processes have sent help message help-mtl-ofi.txt / OFI call fail
+[thin006.hpc.rd.areasciencepark.it:936319] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+This test requires exactly two processes
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+[thin006:936429:0:936429] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f55616fb1c0)
+[thin006:936435:0:936435] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f90c0cfb1c0)
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[11977,1],13]
+  Exit code:    1
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Open MPI failed an OFI Libfabric library call (fi_endpoint).  This is highly
+unusual; your job may behave unpredictably (and/or abort) after this.
+
+  Local host: thin006
+  Location: mtl_ofi_component.c:509
+  Error: Invalid argument (22)
+--------------------------------------------------------------------------
+This test requires exactly two processes
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[11573,1],17]
+  Exit code:    1
+--------------------------------------------------------------------------
+[thin006.hpc.rd.areasciencepark.it:936504] 17 more processes have sent help message help-mtl-ofi.txt / OFI call fail
+[thin006.hpc.rd.areasciencepark.it:936504] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+This test requires exactly two processes
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[11666,1],4]
+  Exit code:    1
+--------------------------------------------------------------------------
+This test requires exactly two processes
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+[thin006:936752:0:936752] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f5e6e6fb1c0)
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[11267,1],19]
+  Exit code:    1
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Open MPI failed an OFI Libfabric library call (fi_endpoint).  This is highly
+unusual; your job may behave unpredictably (and/or abort) after this.
+
+  Local host: thin006
+  Location: mtl_ofi_component.c:509
+  Error: Invalid argument (22)
+--------------------------------------------------------------------------
+This test requires exactly two processes
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[11396,1],22]
+  Exit code:    1
+--------------------------------------------------------------------------
+[thin006.hpc.rd.areasciencepark.it:936841] 23 more processes have sent help message help-mtl-ofi.txt / OFI call fail
+[thin006.hpc.rd.areasciencepark.it:936841] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+--------------------------------------------------------------------------
+Open MPI failed an OFI Libfabric library call (fi_endpoint).  This is highly
+unusual; your job may behave unpredictably (and/or abort) after this.
+
+  Local host: thin006
+  Location: mtl_ofi_component.c:509
+  Error: Invalid argument (22)
+--------------------------------------------------------------------------
+This test requires exactly two processes
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+[thin006:937015:0:937015] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f1302afb1c0)
+[thin006:937017:0:937017] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fb4c66fb1c0)
+[thin006:937020:0:937020] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f43016fb1c0)
+[thin006:937023:0:937023] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f19d4cfb1c0)
+[thin006:937024:0:937024] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f6aa9afb1c0)
+[thin006:937028:0:937028] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f01f94fb1c0)
+[thin006:936970:0:936970] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fa5b10fb1c0)
+[thin006:936971:0:936971] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f95652fb1c0)
+[thin006:936972:0:936972] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f30ecefb1c0)
+[thin006:936974:0:936974] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f3c738fb1c0)
+[thin006:936976:0:936976] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fd0e0afb1c0)
+[thin006:936979:0:936979] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fad1a2fb1c0)
+[thin006:937030:0:937030] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f1d33cfb1c0)
+[thin006:936982:0:936982] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7ff5234fb1c0)
+[thin006:936985:0:936985] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fec2f0fb1c0)
+[thin006:936989:0:936989] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f7159afb1c0)
+[thin006:936992:0:936992] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7ff50d8fb1c0)
+[thin006:936995:0:936995] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f90e3cfb1c0)
+[thin006:936997:0:936997] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f9f574fb1c0)
+[thin006:937000:0:937000] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f038a8fb1c0)
+[thin006:937002:0:937002] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fbc514fb1c0)
+[thin006:937005:0:937005] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f89d3cfb1c0)
+[thin006:937008:0:937008] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fe26a6fb1c0)
+[thin006:937012:0:937012] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f7e26afb1c0)
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[11021,1],25]
+  Exit code:    1
+--------------------------------------------------------------------------
+[thin006.hpc.rd.areasciencepark.it:936960] 23 more processes have sent help message help-mtl-ofi.txt / OFI call fail
+[thin006.hpc.rd.areasciencepark.it:936960] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+--------------------------------------------------------------------------
+Open MPI failed an OFI Libfabric library call (fi_endpoint).  This is highly
+unusual; your job may behave unpredictably (and/or abort) after this.
+
+  Local host: thin006
+  Location: mtl_ofi_component.c:509
+  Error: Invalid argument (22)
+--------------------------------------------------------------------------
+This test requires exactly two processes
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+[thin006:937319:0:937319] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7ffaaf8fb1c0)
+[thin006:937262:0:937262] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f98066fb1c0)
+[thin006:937322:0:937322] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7ff335efb1c0)
+[thin006:937263:0:937263] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f08624fb1c0)
+[thin006:937264:0:937264] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f246f4fb1c0)
+[thin006:937266:0:937266] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fc9e4efb1c0)
+[thin006:937268:0:937268] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f472d4fb1c0)
+[thin006:937271:0:937271] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f1235cfb1c0)
+[thin006:937274:0:937274] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f6ca20fb1c0)
+[thin006:937277:0:937277] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fe97fcfb1c0)
+[thin006:937281:0:937281] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f278a2fb1c0)
+[thin006:937283:0:937283] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f10134fb1c0)
+[thin006:937286:0:937286] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fd02fcfb1c0)
+[thin006:937289:0:937289] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fcf696fb1c0)
+[thin006:937292:0:937292] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f2b97cfb1c0)
+[thin006:937295:0:937295] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f1ef48fb1c0)
+[thin006:937298:0:937298] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fafb12fb1c0)
+[thin006:937300:0:937300] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7ff609efb1c0)
+[thin006:937303:0:937303] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f5dce4fb1c0)
+[thin006:937305:0:937305] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f5f9f0fb1c0)
+[thin006:937310:0:937310] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f2c54cfb1c0)
+[thin006:937313:0:937313] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f9ec52fb1c0)
+[thin006:937315:0:937315] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7ff9a70fb1c0)
+[thin006:937317:0:937317] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f36ef8fb1c0)
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[10793,1],24]
+  Exit code:    1
+--------------------------------------------------------------------------
+[thin006.hpc.rd.areasciencepark.it:937252] 23 more processes have sent help message help-mtl-ofi.txt / OFI call fail
+[thin006.hpc.rd.areasciencepark.it:937252] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+--------------------------------------------------------------------------
+Open MPI failed an OFI Libfabric library call (fi_endpoint).  This is highly
+unusual; your job may behave unpredictably (and/or abort) after this.
+
+  Local host: thin006
+  Location: mtl_ofi_component.c:509
+  Error: Invalid argument (22)
+--------------------------------------------------------------------------
+This test requires exactly two processes
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+[thin006:937589:0:937589] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fbedccfb1c0)
+[thin006:937592:0:937592] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f8227cfb1c0)
+[thin006:937597:0:937597] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f41fd0fb1c0)
+[thin006:937540:0:937540] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f1fd78fb1c0)
+[thin006:937541:0:937541] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f3829cfb1c0)
+[thin006:937600:0:937600] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f7a76cfb1c0)
+[thin006:937542:0:937542] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f60d28fb1c0)
+[thin006:937543:0:937543] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f22a70fb1c0)
+[thin006:937545:0:937545] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f236bcfb1c0)
+[thin006:937548:0:937548] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fd5ae4fb1c0)
+[thin006:937552:0:937552] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f4aafcfb1c0)
+[thin006:937555:0:937555] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7faaa9efb1c0)
+[thin006:937558:0:937558] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f77720fb1c0)
+[thin006:937561:0:937561] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f22ff0fb1c0)
+[thin006:937564:0:937564] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fad29cfb1c0)
+[thin006:937566:0:937566] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f89a78fb1c0)
+[thin006:937569:0:937569] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f25fdefb1c0)
+[thin006:937572:0:937572] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fb67f4fb1c0)
+[thin006:937573:0:937573] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f55908fb1c0)
+[thin006:937576:0:937576] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f0ea7cfb1c0)
+[thin006:937578:0:937578] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7ff94b4fb1c0)
+[thin006:937580:0:937580] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fa7fe6fb1c0)
+[thin006:937582:0:937582] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f6f370fb1c0)
+[thin006:937585:0:937585] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f5e3f4fb1c0)
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[10551,1],29]
+  Exit code:    1
+--------------------------------------------------------------------------
+[thin006.hpc.rd.areasciencepark.it:937530] 23 more processes have sent help message help-mtl-ofi.txt / OFI call fail
+[thin006.hpc.rd.areasciencepark.it:937530] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+--------------------------------------------------------------------------
+Open MPI failed an OFI Libfabric library call (fi_endpoint).  This is highly
+unusual; your job may behave unpredictably (and/or abort) after this.
+
+  Local host: thin006
+  Location: mtl_ofi_component.c:509
+  Error: Invalid argument (22)
+--------------------------------------------------------------------------
+This test requires exactly two processes
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+[thin006:937823:0:937823] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f48068fb1c0)
+[thin006:937827:0:937827] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7feb520fb1c0)
+[thin006:937830:0:937830] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f4c1bcfb1c0)
+[thin006:937833:0:937833] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f9bf64fb1c0)
+[thin006:937836:0:937836] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fd4690fb1c0)
+[thin006:937839:0:937839] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f5fe70fb1c0)
+[thin006:937842:0:937842] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f0c93cfb1c0)
+[thin006:937845:0:937845] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f69beafb1c0)
+[thin006:937848:0:937848] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fcd66afb1c0)
+[thin006:937851:0:937851] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f5491efb1c0)
+[thin006:937853:0:937853] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f86834fb1c0)
+[thin006:937856:0:937856] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f355fcfb1c0)
+[thin006:937858:0:937858] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f9de68fb1c0)
+[thin006:937861:0:937861] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f103f8fb1c0)
+[thin006:937864:0:937864] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fa900efb1c0)
+[thin006:937867:0:937867] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f240f8fb1c0)
+[thin006:937870:0:937870] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f658e6fb1c0)
+[thin006:937875:0:937875] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f10038fb1c0)
+[thin006:937877:0:937877] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f48d56fb1c0)
+[thin006:937818:0:937818] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f9629efb1c0)
+[thin006:937879:0:937879] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f4e6a2fb1c0)
+[thin006:937819:0:937819] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f9f9a4fb1c0)
+[thin006:937820:0:937820] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fd5088fb1c0)
+[thin006:937821:0:937821] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f7cb9efb1c0)
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[10333,1],29]
+  Exit code:    1
+--------------------------------------------------------------------------
+[thin006.hpc.rd.areasciencepark.it:937808] 23 more processes have sent help message help-mtl-ofi.txt / OFI call fail
+[thin006.hpc.rd.areasciencepark.it:937808] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+This test requires exactly two processes
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+[thin006:938133:0:938133] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fa27b4fb1c0)
+[thin006:938135:0:938135] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fac818fb1c0)
+[thin006:938139:0:938139] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f400b0fb1c0)
+[thin006:938141:0:938141] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f456bcfb1c0)
+[thin006:938145:0:938145] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7ffb7bcfb1c0)
+[thin006:938149:0:938149] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fdae8efb1c0)
+[thin006:938151:0:938151] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f8056afb1c0)
+[thin006:938155:0:938155] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f3a9d8fb1c0)
+[thin006:938096:0:938096] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f1e1defb1c0)
+[thin006:938157:0:938157] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fdc1e8fb1c0)
+[thin006:938097:0:938097] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f3399cfb1c0)
+[thin006:938098:0:938098] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7ff323cfb1c0)
+[thin006:938100:0:938100] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fca98afb1c0)
+[thin006:938102:0:938102] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f76d94fb1c0)
+[thin006:938105:0:938105] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fe1896fb1c0)
+[thin006:938107:0:938107] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f2d58cfb1c0)
+[thin006:938110:0:938110] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f485bcfb1c0)
+[thin006:938114:0:938114] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f3aebcfb1c0)
+[thin006:938117:0:938117] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f1d2bcfb1c0)
+[thin006:938119:0:938119] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f7da4cfb1c0)
+[thin006:938123:0:938123] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f6f07cfb1c0)
+[thin006:938126:0:938126] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fe280efb1c0)
+[thin006:938128:0:938128] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7febba0fb1c0)
+[thin006:938131:0:938131] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fd0b8afb1c0)
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[14187,1],27]
+  Exit code:    1
+--------------------------------------------------------------------------
+This test requires exactly two processes
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+[thin006:938394:0:938394] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f3d0dafb1c0)
+[thin006:938395:0:938395] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fbcc38fb1c0)
+[thin006:938397:0:938397] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7ff0034fb1c0)
+[thin006:938399:0:938399] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7ff93fcfb1c0)
+[thin006:938402:0:938402] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f643e6fb1c0)
+[thin006:938405:0:938405] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f2e938fb1c0)
+[thin006:938411:0:938411] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f48626fb1c0)
+[thin006:938413:0:938413] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f739d0fb1c0)
+[thin006:938415:0:938415] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f70b7cfb1c0)
+[thin006:938418:0:938418] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f7c30afb1c0)
+[thin006:938420:0:938420] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fd3f7cfb1c0)
+[thin006:938423:0:938423] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f4c9a2fb1c0)
+[thin006:938426:0:938426] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f72166fb1c0)
+[thin006:938428:0:938428] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f326eafb1c0)
+[thin006:938431:0:938431] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7efd26cfb1c0)
+[thin006:938433:0:938433] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f11b8efb1c0)
+[thin006:938436:0:938436] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f85f26fb1c0)
+[thin006:938441:0:938441] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fee5d2fb1c0)
+[thin006:938444:0:938444] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fafed0fb1c0)
+[thin006:938446:0:938446] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f94b56fb1c0)
+[thin006:938448:0:938448] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fbfd98fb1c0)
+[thin006:938450:0:938450] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f48c74fb1c0)
+[thin006:938393:0:938393] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fee5ccfb1c0)
+[thin006:938455:0:938455] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f33438fb1c0)
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[13954,1],35]
+  Exit code:    1
+--------------------------------------------------------------------------
+This test requires exactly two processes
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+[thin006:938671:0:938671] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f020b4fb1c0)
+[thin006:938674:0:938674] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f1886cfb1c0)
+[thin006:938677:0:938677] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f46870fb1c0)
+[thin006:938679:0:938679] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fdefe8fb1c0)
+[thin006:938683:0:938683] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f140a2fb1c0)
+[thin006:938686:0:938686] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f1caecfb1c0)
+[thin006:938689:0:938689] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f7f530fb1c0)
+[thin006:938691:0:938691] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fa5abcfb1c0)
+[thin006:938695:0:938695] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fef930fb1c0)
+[thin006:938697:0:938697] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f629fcfb1c0)
+[thin006:938699:0:938699] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f903a2fb1c0)
+[thin006:938701:0:938701] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fe7be8fb1c0)
+[thin006:938702:0:938702] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f28460fb1c0)
+[thin006:938705:0:938705] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fc4654fb1c0)
+[thin006:938707:0:938707] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f34db8fb1c0)
+[thin006:938708:0:938708] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f43e50fb1c0)
+[thin006:938712:0:938712] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fc1478fb1c0)
+[thin006:938715:0:938715] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fcb4f8fb1c0)
+[thin006:938720:0:938720] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fcd90cfb1c0)
+[thin006:938665:0:938665] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f2ebbcfb1c0)
+[thin006:938723:0:938723] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fd0d78fb1c0)
+[thin006:938666:0:938666] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f038acfb1c0)
+[thin006:938667:0:938667] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f92ce0fb1c0)
+[thin006:938668:0:938668] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7eff86afb1c0)
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[13714,1],36]
+  Exit code:    1
+--------------------------------------------------------------------------
+This test requires exactly two processes
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+[thin006:938956:0:938956] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f6b230fb1c0)
+[thin006:939016:0:939016] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f97c3cfb1c0)
+[thin006:938957:0:938957] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f0b3ecfb1c0)
+[thin006:938958:0:938958] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f5e7e6fb1c0)
+[thin006:938960:0:938960] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f4ddacfb1c0)
+[thin006:938961:0:938961] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fc5626fb1c0)
+[thin006:938965:0:938965] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fadd26fb1c0)
+[thin006:938968:0:938968] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f96b6cfb1c0)
+[thin006:938971:0:938971] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f7b2defb1c0)
+[thin006:938974:0:938974] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f0eab8fb1c0)
+[thin006:938977:0:938977] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fe2878fb1c0)
+[thin006:938980:0:938980] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f58f58fb1c0)
+[thin006:938983:0:938983] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f4e58afb1c0)
+[thin006:938986:0:938986] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fe05e4fb1c0)
+[thin006:938989:0:938989] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fabbe2fb1c0)
+[thin006:938991:0:938991] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f167bcfb1c0)
+[thin006:938994:0:938994] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f6b7f0fb1c0)
+[thin006:938996:0:938996] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f012bcfb1c0)
+[thin006:938999:0:938999] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f72a92fb1c0)
+[thin006:939002:0:939002] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f5f2ecfb1c0)
+[thin006:939005:0:939005] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f43a9cfb1c0)
+[thin006:939008:0:939008] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f944bcfb1c0)
+[thin006:939011:0:939011] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f375f8fb1c0)
+[thin006:939014:0:939014] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fcc40afb1c0)
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[13519,1],34]
+  Exit code:    1
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+Open MPI failed an OFI Libfabric library call (fi_endpoint).  This is highly
+unusual; your job may behave unpredictably (and/or abort) after this.
+
+  Local host: thin006
+  Location: mtl_ofi_component.c:509
+  Error: Invalid argument (22)
+--------------------------------------------------------------------------
+This test requires exactly two processes
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+[thin006:939311:0:939311] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7ff411cfb1c0)
+[thin006:939252:0:939252] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7ff2d10fb1c0)
+[thin006:939253:0:939253] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fa16bcfb1c0)
+[thin006:939254:0:939254] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f3444cfb1c0)
+[thin006:939256:0:939256] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f33a90fb1c0)
+[thin006:939258:0:939258] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f97556fb1c0)
+[thin006:939261:0:939261] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f0307cfb1c0)
+[thin006:939264:0:939264] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f6227cfb1c0)
+[thin006:939267:0:939267] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fea774fb1c0)
+[thin006:939270:0:939270] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fb3290fb1c0)
+[thin006:939274:0:939274] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f4fd6cfb1c0)
+[thin006:939276:0:939276] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f4513cfb1c0)
+[thin006:939315:0:939315] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7faf03cfb1c0)
+[thin006:939280:0:939280] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f7c26afb1c0)
+[thin006:939282:0:939282] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fb09d2fb1c0)
+[thin006:939285:0:939285] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f74b3cfb1c0)
+[thin006:939288:0:939288] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f451b4fb1c0)
+[thin006:939290:0:939290] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fe9708fb1c0)
+[thin006:939294:0:939294] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fe799cfb1c0)
+[thin006:939295:0:939295] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fd64ecfb1c0)
+[thin006:939299:0:939299] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f6ed38fb1c0)
+[thin006:939301:0:939301] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f94a9efb1c0)
+[thin006:939306:0:939306] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f82f74fb1c0)
+[thin006:939308:0:939308] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f10494fb1c0)
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[13287,1],39]
+  Exit code:    1
+--------------------------------------------------------------------------
+[thin006.hpc.rd.areasciencepark.it:939242] 23 more processes have sent help message help-mtl-ofi.txt / OFI call fail
+[thin006.hpc.rd.areasciencepark.it:939242] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+This test requires exactly two processes
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+[thin006:939569:0:939569] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f300dafb1c0)
+[thin006:939572:0:939572] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f33f48fb1c0)
+[thin006:939574:0:939574] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f87ecafb1c0)
+[thin006:939578:0:939578] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f80f60fb1c0)
+[thin006:939581:0:939581] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7faef5efb1c0)
+[thin006:939585:0:939585] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7ff116cfb1c0)
+[thin006:939526:0:939526] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f4e810fb1c0)
+[thin006:939587:0:939587] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f488ecfb1c0)
+[thin006:939527:0:939527] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fd3e5efb1c0)
+[thin006:939528:0:939528] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fdb9dafb1c0)
+[thin006:939529:0:939529] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f0475afb1c0)
+[thin006:939531:0:939531] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fa5e34fb1c0)
+[thin006:939534:0:939534] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f581bcfb1c0)
+[thin006:939538:0:939538] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fc38dcfb1c0)
+[thin006:939541:0:939541] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f65f2cfb1c0)
+[thin006:939544:0:939544] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fdae64fb1c0)
+[thin006:939547:0:939547] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fd2fbcfb1c0)
+[thin006:939550:0:939550] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7efcb70fb1c0)
+[thin006:939553:0:939553] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f14830fb1c0)
+[thin006:939556:0:939556] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f1a1fcfb1c0)
+[thin006:939558:0:939558] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f29930fb1c0)
+[thin006:939561:0:939561] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fa1012fb1c0)
+[thin006:939564:0:939564] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fc658efb1c0)
+[thin006:939566:0:939566] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f5110afb1c0)
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[13041,1],41]
+  Exit code:    1
+--------------------------------------------------------------------------
+This test requires exactly two processes
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+[thin006:939811:0:939811] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f747b4fb1c0)
+[thin006:939814:0:939814] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fdfa7cfb1c0)
+[thin006:939818:0:939818] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fea9fcfb1c0)
+[thin006:939820:0:939820] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fb41dcfb1c0)
+[thin006:939822:0:939822] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fee566fb1c0)
+[thin006:939826:0:939826] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f89b92fb1c0)
+[thin006:939829:0:939829] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f967f8fb1c0)
+[thin006:939831:0:939831] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f7d0d8fb1c0)
+[thin006:939834:0:939834] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fbbf18fb1c0)
+[thin006:939837:0:939837] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f43b58fb1c0)
+[thin006:939841:0:939841] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f6f3d2fb1c0)
+[thin006:939844:0:939844] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7ff11f8fb1c0)
+[thin006:939846:0:939846] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f7793cfb1c0)
+[thin006:939849:0:939849] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fdbbbcfb1c0)
+[thin006:939850:0:939850] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fc8dc8fb1c0)
+[thin006:939793:0:939793] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f5efe6fb1c0)
+[thin006:939854:0:939854] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7ff6a10fb1c0)
+[thin006:939794:0:939794] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f3144afb1c0)
+[thin006:939795:0:939795] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fb61eafb1c0)
+[thin006:939797:0:939797] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7ff865efb1c0)
+[thin006:939799:0:939799] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f3aa30fb1c0)
+[thin006:939803:0:939803] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fbdcdafb1c0)
+[thin006:939805:0:939805] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f8edccfb1c0)
+[thin006:939808:0:939808] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f3cab0fb1c0)
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[12298,1],36]
+  Exit code:    1
+--------------------------------------------------------------------------
+This test requires exactly two processes
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+[thin006:940083:0:940083] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f4f3fcfb1c0)
+[thin006:940086:0:940086] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f432d4fb1c0)
+[thin006:940088:0:940088] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f225fcfb1c0)
+[thin006:940089:0:940089] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f9b264fb1c0)
+[thin006:940092:0:940092] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f0c39cfb1c0)
+[thin006:940095:0:940095] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7efe2d4fb1c0)
+[thin006:940099:0:940099] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fab192fb1c0)
+[thin006:940101:0:940101] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f658e6fb1c0)
+[thin006:940103:0:940103] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f79892fb1c0)
+[thin006:940105:0:940105] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fa3262fb1c0)
+[thin006:940107:0:940107] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f143cefb1c0)
+[thin006:940110:0:940110] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fb3afcfb1c0)
+[thin006:940112:0:940112] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f88cbcfb1c0)
+[thin006:940117:0:940117] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f055bcfb1c0)
+[thin006:940120:0:940120] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f51facfb1c0)
+[thin006:940123:0:940123] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f4cc52fb1c0)
+[thin006:940066:0:940066] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fd36bcfb1c0)
+[thin006:940127:0:940127] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f0f37cfb1c0)
+[thin006:940067:0:940067] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f5d5bcfb1c0)
+[thin006:940068:0:940068] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f9525afb1c0)
+[thin006:940069:0:940069] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f7daf4fb1c0)
+[thin006:940071:0:940071] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f41698fb1c0)
+[thin006:940073:0:940073] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f5ebd6fb1c0)
+[thin006:940077:0:940077] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fc00d6fb1c0)
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[16149,1],47]
+  Exit code:    1
+--------------------------------------------------------------------------
+Performance test completed
