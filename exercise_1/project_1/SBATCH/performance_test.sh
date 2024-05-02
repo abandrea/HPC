@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=PerformanceModel
 #SBATCH --nodes=2
-#SBATCH --ntasks-per-node=24
+#SBATCH --ntasks=2
 #SBATCH --time=01:00:00
 #SBATCH --partition=THIN
 #SBATCH --exclusive
@@ -17,10 +17,8 @@ output_file="${output_dir}/performance.csv"
 echo "Size, Avg Latency" > $output_file
 
 # Assuming you want to vary the number of processes in a loop
-for np in {2..48..2}; do  # This loops from 2 to 48 in steps of 2
-    result=$(mpirun -np $np --map-by core ../../../../osu-micro-benchmarks-7.3/c/mpi/pt2pt/standard/osu_latency)
-    # write result to csv
-    echo $result >> $output_file
-done
+result=$(mpirun -np 2 --map-by core ../../../../osu-micro-benchmarks-7.3/c/mpi/pt2pt/standard/osu_latency)
+# write result to csv
+echo $result >> $output_file
 
 echo "Performance test completed"
