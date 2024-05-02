@@ -103,10 +103,10 @@ For the execution of the benchmarks, it is needed to use the `mpirun` command, w
 
 The parameters for this project are the following:
 
-* Number of processes: 2, 4, 8, 16, 32, 64, 128, 256 (powers of 2)
+* Number of processes: from 1 to 48 
 * Message size: 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144, 524288, 1048576
 
-Number of processes will be tested from 2 to 256 (powers of 2), while the message size will be tested from 2 bytes to 1 MB. The benchmarks will be executed using the default openMPI implementation and the `basic_linear`, `chain`, and `pipeline` algorithms for the `broadcast` and `reduce` operations.
+Number of processes will be tested from 1 to 48 (powers of 2), while the message size will be tested from 2 bit to 1 MB. The benchmarks will be executed using the default openMPI implementation and the `basic_linear`, `chain`, and `pipeline` algorithms for the `broadcast` and `reduce` operations.
 
 The execution of the benchmarks can be done using the following commands:
 
