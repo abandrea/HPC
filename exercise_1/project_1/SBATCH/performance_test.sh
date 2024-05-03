@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=PerformanceModel
 #SBATCH --nodes=2
-#SBATCH --ntasks-per-core = 1
+#SBATCH --ntasks-per-core=1
 #SBATCH --time=01:00:00
 #SBATCH --partition=THIN
 #SBATCH --exclusive
