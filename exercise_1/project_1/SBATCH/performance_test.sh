@@ -9,7 +9,7 @@
 module load openMPI/4.1.5/gnu/12.2.1
 
 # Define output directory and file
-output_dir="../performance_test"
+output_dir="../performance_test2"
 mkdir -p $output_dir
 output_file="${output_dir}/performance_2.csv"
 
