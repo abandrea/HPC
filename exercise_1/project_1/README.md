@@ -128,14 +128,14 @@ In every cluster, it is important to check and verify every parameters in order 
 
 This first check can be done using the command `sinfo` that shows the status of the partitions and nodes in the cluster, including the number of nodes available, the number of nodes in use, and the number of nodes down. Or, can be easily used `scom` that is a light TUI that help to manage the jobs in the cluster, gather info about them and keep track of the work. 
 
-During the project, the only available partitions were `THIN` and `FAT`. 
+During the project, the only available partition was `THIN`. 
 
-|**THIN Nodes** | **FAT Nodes** |
-|---------------|---------------|
-|10 nodes       | 2 nodes       |
-|768 GB of RAM  | 1536 GB of RAM|
-|24 cores       | 36 cores      |
-|1.997 Tflops   | 3.456 Tflops  |
+|**THIN Nodes** |
+|---------------|
+|10 nodes       | 
+|768 GB of RAM  | 
+|24 cores       | 
+|1.997 Tflops   | 
 
 ## Writing the SLURM Script
 
@@ -184,4 +184,46 @@ For the analysis of the results, it was used Python for semplicity and to have a
 The `broadcast` operation is a one-to-all communication operation that sends a message from the root process to all other processes in the communicator. The `broadcast` operation is a common operation in parallel programming, and it is used to distribute data from one process to all other processes in the communicator. The performance of the `broadcast` operation can be affected by factors such as the size of the message, the number of processes, the network topology, and the communication pattern.
 
 From the results of the benchmarks, that were saved in a csv file, it is possible to analyze the performance of the `broadcast` operation using the different algorithms. 
+
+
+
+
+## Segmented Linear Model Parameters for Broadcast Operation
+
+
+|Algorithm| Intercept | Slope | Processes |
+|-|-------|-----------|-----------|
+|Basic Linear| -4.9230 | 6.2399 | $\leq 12$ |
+|Basic Linear| -38.9755 | 9.0776 | $\leq 24$ |
+|Basic Linear| 242.8622 | -2.6656 | $\leq 36$ |
+|Basic Linear| 5.2882 | 3.9336 | $\leq 48$ |
+|Chain | 1.6616 | 4.7161 | $\leq 12$ |
+| Chain | 15.3920 | 3.5719 | $\leq 24$ |
+| Chain | 79.4132 | 0.9043 | $\leq 36$ |
+| Chain | 82.1021 | 0.8297 | $\leq 48$ |
+| Pipeline | -8.7844 | 8.6303 | $\leq 12$ |
+| Pipeline | -3.2284 | 8.1672 | $\leq 24$ |
+| Pipeline | -1.0667 | 8.0772 | $\leq 36$ |
+| Pipeline | 10.1810 | 7.7647 | $\leq 48$ |
+
+$$\text{Latency} = Intercept + Slope \times Processes$$
+
+
+## Segmented Linear Model Parameters for Performance Model for Core, Socket, Node mapping
+
+| Mapping | Intercept | Slope | Size |
+|-|-------|-----------|-----------|
+| Core | 1.1736 | 0.0001 | $\leq 1043980$ |
+| Core | -29.4428 | 0.0001 | $\leq 4194304$ |
+| Socket | 4.3637 | 0.0001 | $\leq 1048567$ |
+| Socket | -24.7014 | 0.0001 | $\leq 4194304$ |
+| Node | 1.6064 | 0.0002 | $\leq 83862$ |
+| Node | 10.2541 | 0.0001 | $\leq 4194304$ |
+
+$$\text{Latency} = Intercept + Slope \times Size$$
+
+
+## Compare Benchmark Results with performance model
+
+
 
