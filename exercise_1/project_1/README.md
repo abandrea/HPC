@@ -179,11 +179,15 @@ The output of the benchmarks was saved in separate files for each algorithm and 
 For the analysis of the results, it was used Python for semplicity and to have a better visualization of the data. 
 
 # Thin Partition
-## Broadcast Operation
+# Broadcast Operation
 
 The `broadcast` operation is a one-to-all communication operation that sends a message from the root process to all other processes in the communicator. The `broadcast` operation is a common operation in parallel programming, and it is used to distribute data from one process to all other processes in the communicator. The performance of the `broadcast` operation can be affected by factors such as the size of the message, the number of processes, the network topology, and the communication pattern.
 
 From the results of the benchmarks, that were saved in a csv file, it is possible to analyze the performance of the `broadcast` operation using the different algorithms. 
+
+## Analysis of the Latency for each basic linear algorithm
+
+The `basic_linear` algorithm is a simple algorithm where, for N processes, the root sends the message to ne N-1 other processes. This algorithm is used as a baseline to compare the latency of the other algorithms.  
 
 
 
@@ -224,6 +228,7 @@ $$\text{Latency} = Intercept + Slope \times Size$$
 
 
 ## Compare Benchmark Results with performance model
+
 
 
 
