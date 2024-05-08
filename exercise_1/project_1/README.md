@@ -229,6 +229,23 @@ $$\text{Latency} = Intercept + Slope \times Size$$
 
 ## Compare Benchmark Results with performance model
 
+## Segmented Linear Model Parameters for Reduce Operation
 
+|Algorithm| Intercept | Slope | Processes |
+|-|-------|-----------|-----------|
+|Basic Linear| -5.5752 | 8.8071 | $\leq 12$ |
+|Basic Linear| -27.7313 | 10.6242 | $\leq 24$ |
+|Basic Linear| 75.7373 | 6.3276 | $\leq 36$ |
+|Basic Linear| 56.5351 | 6.8610 | $\leq 48$ |
+|Chain | 15.7189 | 3.4360 | $\leq 12$ |
+| Chain | 27.1313 | 2.4350 | $\leq 24$ |
+| Chain | 21.5941 | 2.6907 | $\leq 36$ |
+| Chain | 27.4018 | 2.5294 | $\leq 48$ |
+| Pipeline | -19.0308 | 13.6258 | $\leq 12$ |
+| Pipeline | 5.9460 | 11.5444 | $\leq 24$ |
+| Pipeline | -12.1973 | 12.3004 | $\leq 36$ |
+| Pipeline | -23.1359 | 12.6042 | $\leq 48$ |
+
+$$\text{Latency} = Intercept + Slope \times Processes$$
 
 
