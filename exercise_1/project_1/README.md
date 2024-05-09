@@ -130,12 +130,12 @@ This first check can be done using the command `sinfo` that shows the status of 
 
 During the project, the only available partition was `THIN`. 
 
-|**THIN Nodes** |
-|---------------|
-|10 nodes       | 
-|768 GB of RAM  | 
-|24 cores       | 
-|1.997 Tflops   | 
+|Computing Nodes | Nodes | CPUs| CPU Cores | Memory | Network |  
+|- | - | - | - | - | - |
+| THIN |10 nodes | 2 x Intel Xeon Gold 6126| 24 (2x12) | 768 GB of RAM  | 1 x 100 Gb/s | 
+
+For other aspects of the computational resources, check the [ORFEO Cluster](https://orfeo-doc.areasciencepark.it/HPC/computational-resources/) documentation.
+
 
 ## Writing the SLURM Script
 
@@ -176,24 +176,87 @@ The output of the benchmarks was saved in separate files for each algorithm and 
 
 # Analysis of the Results
 
-For the analysis of the results, it was used Python for semplicity and to have a better visualization of the data. 
+For the analysis of the results, it was used Python for semplicity and to have a better visualization of the data. The analysis is available in the `bcast.ipynb` and `reduce.ipynb` notebooks.
 
-# Thin Partition
+## Choosing a Fixed Message Size
+
+When selecting a fixed message size for this comparison analysis, can be beneficial to choose a value that is representative of typical communication patterns in the application or system being studied. This will help ensure that the results are relevant and applicable to real-world scenarios:
+
+1. Common Size in Practice: Sizes like 256 bytes, 1024 bytes (1KB), or 65536 (64KB) bytes are often used in benchmarks as they represet typical messahe sizes in many applications.
+2. Coverage in Data: In order to be replicated, it is important to ensure that the chosen size is well-represented across all the datasets, meaning it should have sufficient data points in both segmented performance models and the MPI broadcast benchmarks.
+3. Statistical Significance: Larger message sizes can highlight differences between algorithms more distinctly, as the impact of latency becomes more pronounced.
+
+Given these considerations, a size like **1024 bytes** might be a balanced choice, offering a good mix of practical relevance and statistical robustness, and will be used for this analysis.
+
+## Performance Model 
+
+During the analysis, will be used a basic performance models. For theoretical performance modeling, it is possible to estimate the latency of point-to-point communication routines, since collective are built on top of them. Inside the OSU benchmark, there is a osu latency test that can be used to measure the latency of point-to-point communication routines. The latency is measured also in microseconds and is the time taken to send a message from one process to another. The latency is influenced by the network latency, the time taken to send a message from one process to another, and the system overhead, the time taken by the system to handle the message. 
+
+Considering the structure of the ORFEO cluster, it was done performance benchmark mapping by core, by socket and by nodes. Then, the data obtained, were used also for a comparison with Broadcast and Reduce operations.
+
+
 # Broadcast Operation
 
 The `broadcast` operation is a one-to-all communication operation that sends a message from the root process to all other processes in the communicator. The `broadcast` operation is a common operation in parallel programming, and it is used to distribute data from one process to all other processes in the communicator. The performance of the `broadcast` operation can be affected by factors such as the size of the message, the number of processes, the network topology, and the communication pattern.
 
-From the results of the benchmarks, that were saved in a csv file, it is possible to analyze the performance of the `broadcast` operation using the different algorithms. 
+From the results of the benchmarks, that were saved in a csv file, it is possible to analyse the performance of the `broadcast` operation using the different algorithms. 
 
 ## Analysis of the Latency for each basic linear algorithm
 
-The `basic_linear` algorithm is a simple algorithm where, for N processes, the root sends the message to ne N-1 other processes. This algorithm is used as a baseline to compare the latency of the other algorithms.  
+The `basic_linear` algorithm is a simple algorithm where, for N processes, the root sends the message to ne N-1 other processes. This algorithm is used as a baseline to compare the latency of the other algorithms. 
+
+## Basic Linear Algorithm
+
+Starting with the `basic_linear` algorithm. This tye of algorithm is used as a baseline to compare with the other two algorithms. In this algorithm, for N processes, the root sends the message to the N-1 other processes.
+
+Pros:
+* Simple and straightforward
+* Effective for small numbers of processes and small data sizes
+
+Cons:
+* Inefficient for large data sizes and large numbers of processes due to sequential nature, causing high latency as each send operation has to complete before the next begins.
+
+From the broadcast benchmarks csv file, it is possible to analyse the latency for processes (cores) and for different message sizes. As a first look, it is possible to see that the latency increases with the number of processes and the message size, as expected. From figure 1, it is possible to see that, for a message size of 2 bytes, the latency is lower than for a message size of 1 MB. This is because the message size affects the time it takes to send the message over the network. The latency increases with the message size because it takes longer to send a larger message over the network. 
+
+![Figure 1 - Latency vs Processes for Basic Linear Algorithm](figures/figure_1.png)
+
+## Chain Algorithm
+
+The `chain` algorithm uses a tree structure but it forms a chain-like structure. The root sends the data to one process, which then forwards it to another, and this continues unit all have received the data. 
+
+Pros:
+* More scalable than the Basic Linear as it can utilize more network bandwidth by overlapping communications.
+
+Cons: 
+* Still not fully optimal for very large numbers of processes, as the depth of the chain (number of steps to reach the last process) grows linearly with the number of processes.
+
+From figure 2, it is plotted the latency for the `chain` algorithm, for different message sizes as before, and in grey, the latency for the `basic_linear` algorithm to compare. It is possible to see that the latency for the `chain` algorithm is lower than for the `basic_linear` algorithm, especially for larger numbers of processes and larger message sizes. This is because the `chain` algorithm is more efficient than the `basic_linear` algorithm, 
+
+![Figure 2 - Latency vs Processes for Chain Algorithm](figures/figure_2.png)
 
 
 
+## Pipeline Algorithm
 
-## Segmented Linear Model Parameters for Broadcast Operation
+The `pipeline` algorithm is a more complex algorithm that divides the message into smaller blocks and pipelines them across the processes. This allows multiple parts of the message to be in transit simultaneously, exploiting higher bandwidth. 
 
+Pros:
+* Highly efficient for lare messages as it utilizes network bandwidth more effectively.
+* Reduces the impact of latency by overlapping communication.
+
+Cons: 
+* Complexity in implementation increases as it requires managing multiple blocks of data simultaneously.
+* May be overkill for very small data sizes or when bandwidth is not a limiting factor.
+
+From figure 3, it is plotted the latency for the `pipeline` algorithm, for different message sizes as before, and in grey, the latency for the `basic_linear` algorithm to compare. It is possible to see that the latency for the `pipeline` algorithm is higher than for the `basic_linear` algorithm for higher numbers of processes and larger message sizes. This is because the `pipeline` algorithm is more complex than the `basic_linear` algorithm, and could it may introduce additional overhead that can increase the latency.
+
+![Figure 3 - Latency vs Processes for Pipeline Algorithm](figures/figure_3.png)
+
+Theoretically, the `pipeline` algorithm tends to be the most efficient for large-scale systems and large data due to its ability to overlap communications and make better use of available bandwidth. However, the best choice of algorithm can depend on specific system characteristics, such as the network topology, the number of processes, and the message size. In this case, the `chain` algorithm seems to be the most efficient for the `broadcast` operation, as it provides a good balance between performance and complexity.
+
+# Segmented Linear Model Parameters for Broadcast Operation
+
+From the results of the benchmarks, it was used a segmented linear model to estimate the models parameters for the `broadcast` operation. The choice of the segmented linear model was made based on the analysis of the data, which showed distinct difference between the socket, core, and node mappings. 
 
 |Algorithm| Intercept | Slope | Processes |
 |-|-------|-----------|-----------|
@@ -212,8 +275,16 @@ The `basic_linear` algorithm is a simple algorithm where, for N processes, the r
 
 $$\text{Latency} = Intercept + Slope \times Processes$$
 
+Under this consideration, again the `chain` algorithm seems to be the most efficient for the `broadcast` operation, as it provides a good balance between performance and complexity. 
+
+From the figure 4 it is possible to see the comparison between the algorithms for the fixed message size of 1024 bytes. The `chain` algorithm has the lowest latency for all numbers of processes, followed by the `basic_linear` algorithm and the `pipeline` algorithm. 
+
+![Figure 4 - Latency vs Processes for Broadcast Operation](figures/figure_4.png)
+
 
 ## Segmented Linear Model Parameters for Performance Model for Core, Socket, Node mapping
+
+As said, the performance model here are theorethical and are used to estimate the latency of point-to-point communication routines, since collective are built on top of them. Same for the broadcast operation, and also for the next analysis with reduce operation, it was used a segmented linear model to estimate the models parameters. The difference between the broadcast (and also reduce) models are justified by the difference in the trasmission of the data by core, socket and nodes. 
 
 | Mapping | Intercept | Slope | Size |
 |-|-------|-----------|-----------|
@@ -226,10 +297,61 @@ $$\text{Latency} = Intercept + Slope \times Processes$$
 
 $$\text{Latency} = Intercept + Slope \times Size$$
 
-
 ## Compare Benchmark Results with performance model
 
+![Figure 5 - Comparison of Benchmark Results with Performance Model](figures/figure_5.png)
+
+From the figure 5, it is possible to see the comparison of the benchmark results with the theoretical performance model for the `broadcast` operation. The benchmark results are shown as dots, and the performance model is shown as a line. For a better visualization, the results are shown for a fixed message size of 1024 bytes and in a log scale for the latency (y-axis).
+
+![Figure 6 - Comparison of Benchmark Results with Performance Model](figures/figure_6.png)
+
+From the figure 6, the basic linear (blue line) shows a steady increase in latency as the number of processes increases. The increase appears roughly linear, especially after the 24-process mark. This reflects the inherent inefficiency of the algorithm as it sequentially communicates with each process. 
+
+The Chain algorithm (orange line) experiences a significant spike at round 44 processes, followed by a sharp decline. This spike may indicate some form of congestion or bottleneck specific to this setup at higher process counts. 
+
+The pipeline algorithm (green line) displays the most consistent and gradual increase in latency among the three algorithms. It remains the most stable and efficient, particularly at higher process counts, likely dye to its ability to overlap communication effectively.
+
+# Reduce Operation
+
+The MPI Reduce operation is a fundamental collective communication function used in parallel computing environments. It combines data from all processes in a communicator using a specified operation and return the result to a designated root process. Common uses of MPI Reduce include summing values from multiple processes, finding global minmums or macimums, or performing other reduction operations such as logical and/or across distributed data. 
+
+So, Reduce operation is a many-to-one communication pattern in MPI. 
+
+The distinction between the Reduce and Broadcast operationsis mainly about the flow of data and the intention behind the operation:
+* **Many-to-one(`MPI_Reduce`)**: Aggregate data from many sources to one destination, combining them into a single result.
+* **One-to-many(`MPI_Broadcast`)**: Distribute data from one source to many destinations, replicating the data.
+
+To replicate the same analysis of the Broadcast operations for the Reduce operations, it was used the same algorithms. 
+
+## Basic Linear Algorithm
+
+From figure 7, it is possible to see the latency for the `basic_linear` algorithm, for different message sizes as before.
+
+![Figure 7 - Latency vs Processes for Basic Linear Algorithm](figures/figure_7.png)
+
+For smaller message sizes (up to about 32KB), the increase in latency as the number of processes grows in relatively moderate. For larger message sizes, so from 32KB and beyond, the latency increases significantly with the number of processes. The impact of increasing message size on latency is more pronounced at higher process counts. this suggests that network congestion or bandwidth limitations become significant factors when larger amounts of data are being reduced across many processes. However, the latency remanins relatively stable for message size up to 256 bytes, regardless of the number of processes (visible from the data). 
+
+## Chain Algorithm
+
+From figure 8, it is possible to analyse the latency for the `chain` algorithm with the same message sizes as before and in grey the latency for the `basic_linear` algorithm used as a baseline to compare.
+
+![Figure 8 - Latency vs Processes for Chain Algorithm](figures/figure_8.png)
+
+The `chain` algorithm benchmark's latency shows significantly lower latencies compared to the `basic_linear` algorithm across most message sizes, particularly evident as the message size increases. For smaller message size, the latency are very close to those of the `basic_linear` algorithm but begin to show substantial improvement as the message size increases. The latency tends to increase with the number of processes, bu the rate of increase is much slower compared to the `basic_linear` algorithm, suggesting better scalability.
+
+So, Both algorithms show increased latency with larger message sizes, but the increase is much steeper for the Basic Linear algorithm. This suggests that the Chain algorithm manages larger messages more efficiently, likely due to better use of network resources and reduced contention at the root.
+
+## Pipeline Algorithm
+
+From figure 9, it is possible to analyse the latency for the `pipeline` algorithm with the same message sizes as before and in grey the latency for the `basic_linear` algorithm used as a baseline to compare.
+
+![Figure 9 - Latency vs Processes for Pipeline Algorithm](figures/figure_9.png)
+
+Same appened before for the `broadcast` operation, the `pipeline` algorithm shows the highest latency among the three algorithms for most message sizes and process counts. This increase in latency suggests that there may be inefficiencies or overheads associated with the pipelining process as implemented or under the specific testing conditions. This could indicates potential scalability issues or inefficiencis in the algorithm's ability to manage parallel data transfer effectively under this benchmark. 
+
 ## Segmented Linear Model Parameters for Reduce Operation
+
+Fromm the results of the benchmarks, it was again used a segmented linear model to estimate the models parameters for the `reduce` operation. 
 
 |Algorithm| Intercept | Slope | Processes |
 |-|-------|-----------|-----------|
@@ -248,4 +370,18 @@ $$\text{Latency} = Intercept + Slope \times Size$$
 
 $$\text{Latency} = Intercept + Slope \times Processes$$
 
+Under this consideration, again the `chain` algorithm seems to be the most efficient for the `broadcast` operation, as it provides a good balance between performance and complexity. 
 
+From the figure 10 it is possible to see the comparison between the algorithms for the fixed message size of 1024 bytes. The `chain` algorithm has the lowest latency for all numbers of processes, followed by the `basic_linear` algorithm and the `pipeline` algorithm. 
+
+![Figure 10 - Latency vs Processes for Reduce Operation for Message Size 1024 Bytes](figures/figure_10.png)
+
+The `basic_linear` algorithm performance is surprisingly efficient compared to the other two, which might be due to the simplicity of the algorithm that alignns well with the hardware and MPI configuration used. The `chain` algorithm, expected to perform better than the `basic_linear` algorithm, shows a slight higher latency, with an spike at higher process counts that could be influenced by the way data is trasmitted in a chain sequence, potentially leading to increased delays as more processes are involved. The `pipeline` algorithm, that as said before is typically designed to excel in environments where large data sets are broken down and processed in segmentes to utilize network bandwidth more effectively, shows the highest latencies across all process counts, suggesting overheads in setting up and managing the pipeline, or possibly contention when multiple data segments are in transit.
+
+## Compare Reduce Benchmark Results with performance model
+
+Using the same performance model as before, it is possible to compare for the same fixed message size of 1024 bytes the benchmark results with the theoretical performance model. 
+
+![Figure 11 - Comparison of Benchmark Results with Performance Model](figures/figure_11.png)
+
+From the figure 11, as analysed, it is possible to constat the efficiency of the `basic_linear` algorithm for this fixed message size took for the analysis, slightly outperforming the `chain` algorithm in terms of maintaining lower latency across all process counts considering both the performance model of the latency between the core, socket and node mapping. The `pipeline` algorithm, from the other side, shows the highest latency across all process counts.
