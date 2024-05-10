@@ -17,7 +17,7 @@ The `osu-micro-benchmarks` tool provides several algorithms for each collective 
 
 ## Replication of the project
 
-Since the ORFEO cluster is not available to everyone, this project will be represented considering the usage for most HPCC systems with same characteristics of the ORFEO cluster. 
+Since the ORFEO cluster is not available to everyone, this project will be represented considering the usage for most HPCC systems with same characteristics of the ORFEO cluster.
 
 * The OS of ORFEO is Linux, so the cluster shell is `bash`. As recommended by the ORFEO documentation, if you want a valid, complete overview, follow the first three lectures of the "[The Missing Semester of Your CS Education](https://missing.csail.mit.edu/)", a course provided by MIT.
 * SLURM is the workload manager used in the ORFEO cluster, an open-source job scheduler and resource management system used in high-performance computing (HPC) environments. It allows users to submit and manage jobs on a cluster of computers, allocating resources such as CPU time, memory, and GPUs.
@@ -25,7 +25,7 @@ Since the ORFEO cluster is not available to everyone, this project will be repre
 
 # Download and Compile the OSU Benchmarks
 
-Once accessed the server, in this case, the ORFEO cluster, it is needed to download the `osu-micro-benchmarks` tool from the official website. The `osu-micro-benchmarks` tool can be downloaded from the official website using the following command via wget (or directly from the [official page](https://mvapich.cse.ohio-state.edu/benchmarks/)):
+Once accessed the server, in this case the ORFEO cluster, it is needed to download the `osu-micro-benchmarks` tool from the official website. The `osu-micro-benchmarks` tool can be downloaded from the official website using the following command via wget (or directly from the [official page](https://mvapich.cse.ohio-state.edu/benchmarks/)):
 
 ```bash
 wget https://mvapich.cse.ohio-state.edu/download/mvapich/osu-micro-benchmarks-7.3.tar.gz
@@ -85,18 +85,6 @@ $ mpirun -np <num_processes> osu_reduce
 
 For this project, it will be tested broadcast and reduce. For both, will be tested the latency and bandwidth of the default openMPI implementation, varying the number of processes and the size of the messages exchanged. Then, it will be compared with the values obtained using different algorithms, using 1 (basic_linear), 2 (chain) and 3 (pipeline) algorithms.
 
-### 1. Basic Linear
-
-The `basic_linear` algorithm is a simple algorithm that sends the message from the root process to all other processes in a linear fashion. The `basic_linear` algorithm is a straightforward algorithm that sends the message from the root process to all other processes one by one. The `basic_linear` algorithm is a simple algorithm that is easy to implement and understand.
-
-### 2. Chain
-
-The `chain` algorithm is a more complex algorithm that sends the message from the root process to all other processes in a chain fashion. The `chain` algorithm is a more complex algorithm that sends the message from the root process to all other processes in a chain fashion. The `chain` algorithm is a more complex algorithm that is more efficient than the `basic_linear` algorithm.
-
-### 3. Pipeline
-
-The `pipeline` algorithm is a more complex algorithm that sends the message from the root process to all other processes in a pipeline fashion. The `pipeline` algorithm is a more complex algorithm that sends the message from the root process to all other processes in a pipeline fashion. The `pipeline` algorithm is a more complex algorithm that is more efficient than the `chain` algorithm.
-
 # Execution of the Benchmarks in a HPC Cluster
 
 For the execution of the benchmarks, it is needed to use the `mpirun` command, which is used to launch MPI applications. The `mpirun` command takes several arguments, including the number of processes, the name of the executable, and any additional arguments that need to be passed to the executable. The `mpirun` command is used to launch MPI applications on a cluster of computers, distributing the processes across the available nodes.
@@ -106,7 +94,7 @@ The parameters for this project are the following:
 * Number of processes: from 1 to 48 
 * Message size: 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144, 524288, 1048576
 
-Number of processes will be tested from 1 to 48 (powers of 2), while the message size will be tested from 2 bit to 1 MB. The benchmarks will be executed using the default openMPI implementation and the `basic_linear`, `chain`, and `pipeline` algorithms for the `broadcast` and `reduce` operations.
+Number of processes will be tested from 1 to 48 (by 2), while the message size will be tested from 2 bytes to 1 MB ($2^{20}$). The benchmarks will be executed using the default openMPI implementation and the `basic_linear`, `chain`, and `pipeline` algorithms for the `broadcast` and `reduce` operations.
 
 The execution of the benchmarks can be done using the following commands:
 
@@ -173,10 +161,11 @@ Obviously, can be more specific and add more parameters to the script, for examp
 For this project, as said before, it will be tested the `broadcast` and `reduce` operations using the default openMPI implementation and the `basic_linear`, `chain`, and `pipeline` algorithms. The benchmarks was executed using `THIN` and `FAT` partitions, using all the available cores on a single node. 
 
 The output of the benchmarks was saved in separate files for each algorithm and operation, and the results were analyzed to compare the performance of the different algorithms.
+______
 
 # Analysis of the Results
 
-For the analysis of the results, it was used Python for semplicity and to have a better visualization of the data. The analysis is available in the `bcast.ipynb` and `reduce.ipynb` notebooks.
+For the analysis of the results, it was used Python for semplicity and to have a better visualization of the data. The jupyter notebook are available in the `bcast.ipynb` and `reduce.ipynb` files.
 
 ## Choosing a Fixed Message Size
 
