@@ -16,7 +16,7 @@ module load openMPI/4.1.5/gnu/12.2.1
 ## Number of thread OpenMP for each task MPI
 export OMP_NUM_THREADS=4
 
-## mpicc -o mandelbrot_mpi_omp -fopenmp mandelbrot_mpi_omp.c
+mpicc -o mandelbrot_mpi_omp -fopenmp mandelbrot_mpi_omp.c
 
 ## Run the program
 mpirun -np 48 ./mandelbrot_mpi_omp
