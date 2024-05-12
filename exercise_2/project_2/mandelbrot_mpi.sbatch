@@ -2,10 +2,10 @@
 #SBATCH --job-name=mandelbrot_mpi
 #SBATCH --output=mandelbrot_%j.out
 #SBATCH --error=mandelbrot_%j.err
-#SBATCH --partition=THIN
+#SBATCH --partition=EPYC
 #SBATCH --nodes=2
-#SBATCH --ntasks-per-node=24
-#SBATCH --time=01:00:00
+#SBATCH --ntasks-per-node=128
+#SBATCH --time=02:00:00
 #SBATCH --exclusive
 ##SBATCH --mem=4G
 
