@@ -56,48 +56,15 @@ The report that you have to attach to the email must
   - the comparison with the algorithm found in the MPI library (for ex. 2a)
 - Draw conclusions and possible improvements from your results
 
-
-
-# Exercise 2a
-
-### **Implement a broadcast algorithm or a all-to-all algorithm (you choose either one) in distributed memory.**
-
-Implementing the algorithm in distributed memory means that you write an MPI code that _using point-to-point calls only_ implements either a broadcast (from any single process to all the other processes) or an all-to-all collective call among MPI processes.
-
-You may use the reference given in Ex. 1 to have some insight about the algorithms, or you may find different ones at your convenience.
-
-
-
-# Exercise 2b
-
-### **Write a parallel implementation of the QuickSort algorithm.**
-
-You find in this folder the file `quicksort.c` which is a standard implementation of the famous divide-and-conquer algorithm. You are provided only with a serial implementation of the vanilla quicksort algorithm, which consists in a recursive calling of a partitioning routines.
-Feel free to improve whatever aspect you may spot in the code.
-
-The requirement is to implement a parallel version that distribute the work among the MPI processes. 
-You can choose among 3 possibilities:
-
-* every MPI process will generate its own chunk of data
-
--  single MPI process generate data chunks and send them to each other MPI process
-- the data are read from a file
-
-It is important that you **do not assume that the data set can fit in the memory available on a single node**.
-To simplify the implementation in distributed memory, you can assume that the data are always homogeneously distributed. You can also assume that they live in the range `[0,1)`.
-The data to be sorted are double-precision floating point; however, to allow you to study the memory efficiency, the array entries are a structure of double of which one is used to sort the entries (see the code for the details).
-
-
-
 # Exercise 2c
 
 ### **The Mandelbrot set**
 
 
 The Mandelbrot set is generated on the complex plane $\mathbb{C}$  by iterating the complex function $f_c(z)$ whose form is
-$$
-f_c(z) = z^2 + c \label{eq:mandelbrot}
-$$
+
+$$f_c(z) = z^2 + c$$
+
 for a complex point $c=x+iy$ and starting from the complex value $z=0$ so to obtain the series
 $$
 z_0 = 0,\, z_1 = f_c(0),\, z_2 = f_c(z_1),\, \dots,\, f_c^n(z_{n-1})
@@ -107,11 +74,10 @@ The $Mandelbrot\, Set\, \mathcal{M}$ is defined as the set of complex points $c$
 Hence, the simple condition to determine whether a point $c$ is in the set $\mathcal{M}$ is the following
 $$
 \left| z_n = f_c^n(0)\right| < 2\;\; \text{or}\;\; n > I_{max}
-\label{eq:condition}
 $$
 where $I_{max}$ is a parameter that sets the maximum number of iteration after which you consider the point $c$ to belong to $\mathcal{M}$ (the accuracy of your calculations increases with $I_{max}$, and so does the computational cost).
 
-Given a portion of the complex plane, included from the bottom left corner $c_L = x_L + iy_L$ and the top right one $c_R = x_R + iy_R$, an image of $\mathcal{M}$, made of $n_x \times n_y$ "pixels" can be obtained deriving, for each point $c_i$ in the plane, the sequence $z_n(c_i)$ to which apply the condition $\eqref{eq:condition}$, where
+Given a portion of the complex plane, included from the bottom left corner $c_L = x_L + iy_L$ and the top right one $c_R = x_R + iy_R$, an image of $\mathcal{M}$, made of $n_x \times n_y$ "pixels" can be obtained deriving, for each point $c_i$ in the plane, the sequence $z_n(c_i)$ to which apply the condition $$ \left| z_n = f_c^n(0)\right| < 2\;\; \text{or}\;\; n > I_{max} $$, where
 $$
 \begin{aligned}
 c_i &= (x_L + \Delta x) + i(y_L + \Delta y) \\
