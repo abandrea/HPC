@@ -1,0 +1,209 @@
+	Command being timed: "mpirun -np 1 ./mandelbrot_scal_mpi"
+	User time (seconds): 0.91
+	System time (seconds): 0.47
+	Percent of CPU this job got: 47%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:02.93
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 215500
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 45760
+	Voluntary context switches: 3521
+	Involuntary context switches: 400
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16392
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "mpirun -np 2 ./mandelbrot_scal_mpi"
+	User time (seconds): 1.04
+	System time (seconds): 0.89
+	Percent of CPU this job got: 74%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:02.60
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 211396
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 7
+	Minor (reclaiming a frame) page faults: 78264
+	Voluntary context switches: 7403
+	Involuntary context switches: 761
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16392
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "mpirun -np 4 ./mandelbrot_scal_mpi"
+	User time (seconds): 2.72
+	System time (seconds): 1.76
+	Percent of CPU this job got: 195%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:02.29
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 208472
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 3
+	Minor (reclaiming a frame) page faults: 148399
+	Voluntary context switches: 14885
+	Involuntary context switches: 372
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16392
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "mpirun -np 8 ./mandelbrot_scal_mpi"
+	User time (seconds): 4.19
+	System time (seconds): 3.41
+	Percent of CPU this job got: 317%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:02.39
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 185352
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 19
+	Minor (reclaiming a frame) page faults: 287025
+	Voluntary context switches: 30578
+	Involuntary context switches: 1693
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16392
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "mpirun -np 16 ./mandelbrot_scal_mpi"
+	User time (seconds): 7.26
+	System time (seconds): 7.23
+	Percent of CPU this job got: 548%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:02.64
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 185176
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 31
+	Minor (reclaiming a frame) page faults: 566498
+	Voluntary context switches: 63834
+	Involuntary context switches: 5306
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16392
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+free(): invalid next size (normal)
+[thin006:72086] *** Process received signal ***
+[thin006:72086] Signal: Aborted (6)
+[thin006:72086] Signal code:  (-6)
+[thin006:72086] [ 0] /lib64/libc.so.6(+0x3cb60)[0x7f0f2d871b60]
+[thin006:72086] [ 1] /lib64/libc.so.6(+0x8cecc)[0x7f0f2d8c1ecc]
+[thin006:72086] [ 2] /lib64/libc.so.6(gsignal+0x16)[0x7f0f2d871ab6]
+[thin006:72086] [ 3] /lib64/libc.so.6(abort+0xd7)[0x7f0f2d85b7fc]
+[thin006:72086] [ 4] /lib64/libc.so.6(+0x810fe)[0x7f0f2d8b60fe]
+[thin006:72086] [ 5] /lib64/libc.so.6(+0x96c0c)[0x7f0f2d8cbc0c]
+[thin006:72086] [ 6] /lib64/libc.so.6(+0x98b9c)[0x7f0f2d8cdb9c]
+[thin006:72086] [ 7] /lib64/libc.so.6(__libc_free+0x73)[0x7f0f2d8d03d3]
+[thin006:72086] [ 8] ./mandelbrot_scal_mpi[0x40165e]
+[thin006:72086] [ 9] /lib64/libc.so.6(+0x27550)[0x7f0f2d85c550]
+[thin006:72086] [10] /lib64/libc.so.6(__libc_start_main+0x89)[0x7f0f2d85c609]
+[thin006:72086] [11] ./mandelbrot_scal_mpi[0x401165]
+[thin006:72086] *** End of error message ***
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 0 on node thin006 exited on signal 6 (Aborted).
+--------------------------------------------------------------------------
+Command exited with non-zero status 134
+	Command being timed: "mpirun -np 24 ./mandelbrot_scal_mpi"
+	User time (seconds): 14.32
+	System time (seconds): 9.48
+	Percent of CPU this job got: 646%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:03.68
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 185240
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 16
+	Minor (reclaiming a frame) page faults: 434904
+	Voluntary context switches: 93221
+	Involuntary context switches: 3811
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16400
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 134
+	Command being timed: "mpirun -np 36 ./mandelbrot_scal_mpi"
+	User time (seconds): 10.83
+	System time (seconds): 11.86
+	Percent of CPU this job got: 708%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:03.20
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 205816
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 46
+	Minor (reclaiming a frame) page faults: 847819
+	Voluntary context switches: 143443
+	Involuntary context switches: 12883
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16392
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "mpirun -np 48 ./mandelbrot_scal_mpi"
+	User time (seconds): 11.28
+	System time (seconds): 12.30
+	Percent of CPU this job got: 761%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:03.10
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 206416
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 69
+	Minor (reclaiming a frame) page faults: 847095
+	Voluntary context switches: 117526
+	Involuntary context switches: 11609
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16392
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
