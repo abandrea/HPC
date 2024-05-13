@@ -28,7 +28,7 @@ int mandelbrot(double c_real, double c_imag, int max_iter) {
 
 // Main function to setup and compute Mandelbrot set over a grid and write to a PGM file
 int main() {
-    int width = 800, height = 800;
+    int width = 4096, height = 4096;
     double center_x = -0.75, center_y = 0.0;
     double radius = 2.0;
     int max_iterations = 1000;
@@ -52,7 +52,7 @@ int main() {
     }
 
     // Write to PGM
-    FILE *file = fopen("mandelbrot.pgm", "wb");
+    FILE *file = fopen("mandelbrot_4096.pgm", "wb");
     if (file == NULL) {
         perror("Failed to open file");
         free(image);
