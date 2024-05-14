@@ -1,0 +1,296 @@
+[thin006:265014:0:265014] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f2dec5c016e)
+==== backtrace (tid: 265014) ====
+ 0  /lib64/libucs.so.0(ucs_handle_error+0x2e4) [0x7f2dddfa4794]
+ 1  /lib64/libucs.so.0(+0x29e3d) [0x7f2dddfa5e3d]
+ 2  /lib64/libucs.so.0(+0x2a025) [0x7f2dddfa6025]
+ 3  /lib64/libc.so.6(+0x1691fc) [0x7f2ded5341fc]
+ 4  /opt/programs/openMPI/4.1.5/lib/libopen-pal.so.40(opal_unsetenv+0x6b) [0x7f2ded28720b]
+ 5  /opt/programs/openMPI/4.1.5/lib/libmpi.so.40(ompi_mpi_finalize+0x8f9) [0x7f2ded652b19]
+ 6  ./mandelbrot_scal_omp() [0x40166f]
+ 7  /lib64/libc.so.6(+0x27550) [0x7f2ded3f2550]
+ 8  /lib64/libc.so.6(__libc_start_main+0x89) [0x7f2ded3f2609]
+ 9  ./mandelbrot_scal_omp() [0x401165]
+=================================
+Command terminated by signal 11
+	Command being timed: "./mandelbrot_scal_omp"
+	User time (seconds): 0.99
+	System time (seconds): 0.73
+	Percent of CPU this job got: 30%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:05.76
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 214680
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 48
+	Minor (reclaiming a frame) page faults: 41237
+	Voluntary context switches: 3452
+	Involuntary context switches: 184
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16400
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+[thin006:265035:0:265035] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f9b9740c16e)
+==== backtrace (tid: 265035) ====
+ 0  /lib64/libucs.so.0(ucs_handle_error+0x2e4) [0x7f9b8cdb8794]
+ 1  /lib64/libucs.so.0(+0x29e3d) [0x7f9b8cdb9e3d]
+ 2  /lib64/libucs.so.0(+0x2a025) [0x7f9b8cdba025]
+ 3  /lib64/libc.so.6(+0x1691fc) [0x7f9b983801fc]
+ 4  /opt/programs/openMPI/4.1.5/lib/libopen-pal.so.40(opal_unsetenv+0x6b) [0x7f9b980d320b]
+ 5  /opt/programs/openMPI/4.1.5/lib/libmpi.so.40(ompi_mpi_finalize+0x8f9) [0x7f9b9849eb19]
+ 6  ./mandelbrot_scal_omp() [0x40166f]
+ 7  /lib64/libc.so.6(+0x27550) [0x7f9b9823e550]
+ 8  /lib64/libc.so.6(__libc_start_main+0x89) [0x7f9b9823e609]
+ 9  ./mandelbrot_scal_omp() [0x401165]
+=================================
+Command terminated by signal 11
+	Command being timed: "./mandelbrot_scal_omp"
+	User time (seconds): 0.90
+	System time (seconds): 0.50
+	Percent of CPU this job got: 54%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:02.60
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 214968
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 39054
+	Voluntary context switches: 3316
+	Involuntary context switches: 41
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16392
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+[thin006:265063:0:265063] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fe02a94516e)
+==== backtrace (tid: 265063) ====
+ 0  /lib64/libucs.so.0(ucs_handle_error+0x2e4) [0x7fe02033d794]
+ 1  /lib64/libucs.so.0(+0x29e3d) [0x7fe02033ee3d]
+ 2  /lib64/libucs.so.0(+0x2a025) [0x7fe02033f025]
+ 3  /lib64/libc.so.6(+0x1691fc) [0x7fe02b8b91fc]
+ 4  /opt/programs/openMPI/4.1.5/lib/libopen-pal.so.40(opal_unsetenv+0x6b) [0x7fe02b60c20b]
+ 5  /opt/programs/openMPI/4.1.5/lib/libmpi.so.40(ompi_mpi_finalize+0x8f9) [0x7fe02b9d7b19]
+ 6  ./mandelbrot_scal_omp() [0x40166f]
+ 7  /lib64/libc.so.6(+0x27550) [0x7fe02b777550]
+ 8  /lib64/libc.so.6(__libc_start_main+0x89) [0x7fe02b777609]
+ 9  ./mandelbrot_scal_omp() [0x401165]
+=================================
+Command terminated by signal 11
+	Command being timed: "./mandelbrot_scal_omp"
+	User time (seconds): 0.95
+	System time (seconds): 0.52
+	Percent of CPU this job got: 60%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:02.45
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 214944
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 38914
+	Voluntary context switches: 3330
+	Involuntary context switches: 44
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16400
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+[thin006:265088:0:265088] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f1cbab3716e)
+==== backtrace (tid: 265088) ====
+ 0  /lib64/libucs.so.0(ucs_handle_error+0x2e4) [0x7f1cb0527794]
+ 1  /lib64/libucs.so.0(+0x29e3d) [0x7f1cb0528e3d]
+ 2  /lib64/libucs.so.0(+0x2a025) [0x7f1cb0529025]
+ 3  /lib64/libc.so.6(+0x1691fc) [0x7f1cbbaab1fc]
+ 4  /opt/programs/openMPI/4.1.5/lib/libopen-pal.so.40(opal_unsetenv+0x6b) [0x7f1cbb7fe20b]
+ 5  /opt/programs/openMPI/4.1.5/lib/libmpi.so.40(ompi_mpi_finalize+0x8f9) [0x7f1cbbbc9b19]
+ 6  ./mandelbrot_scal_omp() [0x40166f]
+ 7  /lib64/libc.so.6(+0x27550) [0x7f1cbb969550]
+ 8  /lib64/libc.so.6(__libc_start_main+0x89) [0x7f1cbb969609]
+ 9  ./mandelbrot_scal_omp() [0x401165]
+=================================
+Command terminated by signal 11
+	Command being timed: "./mandelbrot_scal_omp"
+	User time (seconds): 1.01
+	System time (seconds): 0.55
+	Percent of CPU this job got: 65%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:02.39
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 214944
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 38899
+	Voluntary context switches: 3400
+	Involuntary context switches: 42
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16392
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+[thin006:265120:0:265120] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f7af1d4716e)
+==== backtrace (tid: 265120) ====
+ 0  /lib64/libucs.so.0(ucs_handle_error+0x2e4) [0x7f7ae3700794]
+ 1  /lib64/libucs.so.0(+0x29e3d) [0x7f7ae3701e3d]
+ 2  /lib64/libucs.so.0(+0x2a025) [0x7f7ae3702025]
+ 3  /lib64/libc.so.6(+0x1691fc) [0x7f7af2cbb1fc]
+ 4  /opt/programs/openMPI/4.1.5/lib/libopen-pal.so.40(opal_unsetenv+0x6b) [0x7f7af2a0e20b]
+ 5  /opt/programs/openMPI/4.1.5/lib/libmpi.so.40(ompi_mpi_finalize+0x8f9) [0x7f7af2dd9b19]
+ 6  ./mandelbrot_scal_omp() [0x40166f]
+ 7  /lib64/libc.so.6(+0x27550) [0x7f7af2b79550]
+ 8  /lib64/libc.so.6(__libc_start_main+0x89) [0x7f7af2b79609]
+ 9  ./mandelbrot_scal_omp() [0x401165]
+=================================
+Command terminated by signal 11
+	Command being timed: "./mandelbrot_scal_omp"
+	User time (seconds): 1.10
+	System time (seconds): 0.57
+	Percent of CPU this job got: 68%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:02.43
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 213860
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 38907
+	Voluntary context switches: 3887
+	Involuntary context switches: 59
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16392
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+[thin006:265152:0:265152] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f4579f5616e)
+==== backtrace (tid: 265152) ====
+ 0  /lib64/libucs.so.0(ucs_handle_error+0x2e4) [0x7f4570131794]
+ 1  /lib64/libucs.so.0(+0x29e3d) [0x7f4570132e3d]
+ 2  /lib64/libucs.so.0(+0x2a025) [0x7f4570133025]
+ 3  /lib64/libc.so.6(+0x1691fc) [0x7f457aeca1fc]
+ 4  /opt/programs/openMPI/4.1.5/lib/libopen-pal.so.40(opal_unsetenv+0x6b) [0x7f457ac1d20b]
+ 5  /opt/programs/openMPI/4.1.5/lib/libmpi.so.40(ompi_mpi_finalize+0x8f9) [0x7f457afe8b19]
+ 6  ./mandelbrot_scal_omp() [0x40166f]
+ 7  /lib64/libc.so.6(+0x27550) [0x7f457ad88550]
+ 8  /lib64/libc.so.6(__libc_start_main+0x89) [0x7f457ad88609]
+ 9  ./mandelbrot_scal_omp() [0x401165]
+=================================
+Command terminated by signal 11
+	Command being timed: "./mandelbrot_scal_omp"
+	User time (seconds): 1.17
+	System time (seconds): 0.57
+	Percent of CPU this job got: 71%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:02.44
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 213416
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 38932
+	Voluntary context switches: 4185
+	Involuntary context switches: 46
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16400
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+[thin006:265190:0:265190] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7fbf1a42716e)
+==== backtrace (tid: 265190) ====
+ 0  /lib64/libucs.so.0(ucs_handle_error+0x2e4) [0x7fbf1803c794]
+ 1  /lib64/libucs.so.0(+0x29e3d) [0x7fbf1803de3d]
+ 2  /lib64/libucs.so.0(+0x2a025) [0x7fbf1803e025]
+ 3  /lib64/libc.so.6(+0x1691fc) [0x7fbf1b39b1fc]
+ 4  /opt/programs/openMPI/4.1.5/lib/libopen-pal.so.40(opal_unsetenv+0x6b) [0x7fbf1b0ee20b]
+ 5  /opt/programs/openMPI/4.1.5/lib/libmpi.so.40(ompi_mpi_finalize+0x8f9) [0x7fbf1b4b9b19]
+ 6  ./mandelbrot_scal_omp() [0x40166f]
+ 7  /lib64/libc.so.6(+0x27550) [0x7fbf1b259550]
+ 8  /lib64/libc.so.6(__libc_start_main+0x89) [0x7fbf1b259609]
+ 9  ./mandelbrot_scal_omp() [0x401165]
+=================================
+Command terminated by signal 11
+	Command being timed: "./mandelbrot_scal_omp"
+	User time (seconds): 1.23
+	System time (seconds): 0.66
+	Percent of CPU this job got: 75%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:02.52
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 213408
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 38923
+	Voluntary context switches: 4156
+	Involuntary context switches: 70
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16392
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+[thin006:265230:0:265230] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x7f8ee218616e)
+==== backtrace (tid: 265230) ====
+ 0  /lib64/libucs.so.0(ucs_handle_error+0x2e4) [0x7f8ed8344794]
+ 1  /lib64/libucs.so.0(+0x29e3d) [0x7f8ed8345e3d]
+ 2  /lib64/libucs.so.0(+0x2a025) [0x7f8ed8346025]
+ 3  /lib64/libc.so.6(+0x1691fc) [0x7f8ee30fa1fc]
+ 4  /opt/programs/openMPI/4.1.5/lib/libopen-pal.so.40(opal_unsetenv+0x6b) [0x7f8ee2e4d20b]
+ 5  /opt/programs/openMPI/4.1.5/lib/libmpi.so.40(ompi_mpi_finalize+0x8f9) [0x7f8ee3218b19]
+ 6  ./mandelbrot_scal_omp() [0x40166f]
+ 7  /lib64/libc.so.6(+0x27550) [0x7f8ee2fb8550]
+ 8  /lib64/libc.so.6(__libc_start_main+0x89) [0x7f8ee2fb8609]
+ 9  ./mandelbrot_scal_omp() [0x401165]
+=================================
+Command terminated by signal 11
+	Command being timed: "./mandelbrot_scal_omp"
+	User time (seconds): 1.32
+	System time (seconds): 0.65
+	Percent of CPU this job got: 77%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:02.56
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 212544
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 38944
+	Voluntary context switches: 4681
+	Involuntary context switches: 67
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16392
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

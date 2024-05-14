@@ -1,0 +1,9 @@
+Running with 1 OpenMP threads:
+Running with 2 OpenMP threads:
+Running with 4 OpenMP threads:
+Running with 8 OpenMP threads:
+Running with 12 OpenMP threads:
+Running with 16 OpenMP threads:
+Running with 20 OpenMP threads:
+Running with 24 OpenMP threads:
+OpenMP scalability test completed.

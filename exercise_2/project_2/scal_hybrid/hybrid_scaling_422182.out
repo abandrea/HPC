@@ -1,0 +1,11 @@
+Running with 2 MPI processes and 1 OpenMP threads:
+Running with 2 MPI processes and 2 OpenMP threads:
+Running with 4 MPI processes and 1 OpenMP threads:
+Running with 4 MPI processes and 2 OpenMP threads:
+Running with 8 MPI processes and 1 OpenMP threads:
+Running with 8 MPI processes and 2 OpenMP threads:
+Running with 16 MPI processes and 1 OpenMP threads:
+Running with 16 MPI processes and 2 OpenMP threads:
+Running with 24 MPI processes and 1 OpenMP threads:
+Running with 24 MPI processes and 2 OpenMP threads:
+Hybrid MPI+OpenMP scalability test completed.
