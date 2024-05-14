@@ -1,0 +1,9 @@
+MPI Processes,User time (seconds),System time (seconds),Percent of CPU this job got,Elapsed (wall clock) time (hmmss or mss),Average shared text size (kbytes),Average unshared data size (kbytes),Average stack size (kbytes),Average total size (kbytes),Maximum resident set size (kbytes),Average resident set size (kbytes),Major (requiring I/O) page faults,Minor (reclaiming a frame) page faults,Voluntary context switches,Involuntary context switches,Swaps,File system inputs,File system outputs,Socket messages sent,Socket messages received,Signals delivered,Page size (bytes),Exit status
+1,0.91,0.47,47%,02.93,0,0,0,0,215500,0,0,45760,3521,400,0,0,16392,0,0,0,4096,0
+2,1.04,0.89,74%,02.60,0,0,0,0,211396,0,7,78264,7403,761,0,0,16392,0,0,0,4096,0
+4,2.72,1.76,195%,02.29,0,0,0,0,208472,0,3,148399,14885,372,0,0,16392,0,0,0,4096,0
+8,4.19,3.41,317%,02.39,0,0,0,0,185352,0,19,287025,30578,1693,0,0,16392,0,0,0,4096,0
+16,7.26,7.23,548%,02.64,0,0,0,0,185176,0,31,566498,63834,5306,0,0,16392,0,0,0,4096,0
+24,14.32,9.48,646%,03.68,0,0,0,0,185240,0,16,434904,93221,3811,0,0,16400,0,0,0,4096,134
+36,10.83,11.86,708%,03.20,0,0,0,0,205816,0,46,847819,143443,12883,0,0,16392,0,0,0,4096,0
+48,11.28,12.30,761%,03.10,0,0,0,0,206416,0,69,847095,117526,11609,0,0,16392,0,0,0,4096,0
