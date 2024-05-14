@@ -5,7 +5,7 @@
 #SBATCH --partition=THIN
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
-#SBATCH --cpus-per-task=24 # Assuming to use all cores on a node
+#SBATCH --cpus-per-task=24 ## Assuming to use all cores on a node
 #SBATCH --time=01:00:00
 #SBATCH --exclusive
 
