@@ -1,0 +1,9 @@
+np,User time (seconds),System time (seconds),Percent of CPU this job got,Elapsed (wall clock) time (ss),Average shared text size (kbytes),Average unshared data size (kbytes),Average stack size (kbytes),Average total size (kbytes),Maximum resident set size (kbytes),Average resident set size (kbytes),Major (requiring I/O) page faults,Minor (reclaiming a frame) page faults,Voluntary context switches,Involuntary context switches,Swaps,File system inputs,File system outputs,Socket messages sent,Socket messages received,Signals delivered,Page size (bytes),Exit status
+1,0.99,0.73,30%,05.76,0,0,0,0,214680,0,48,41237,3452,184,0,0,16400,0,0,0,4096,0
+2,0.90,0.50,54%,02.60,0,0,0,0,214968,0,0,39054,3316,41,0,0,16392,0,0,0,4096,0
+4,0.95,0.52,60%,02.45,0,0,0,0,214944,0,0,38914,3330,44,0,0,16400,0,0,0,4096,0
+8,1.01,0.55,65%,02.39,0,0,0,0,214944,0,0,38899,3400,42,0,0,16392,0,0,0,4096,0
+12,1.10,0.57,68%,02.43,0,0,0,0,213860,0,0,38907,3887,59,0,0,16392,0,0,0,4096,0
+16,1.17,0.57,71%,02.44,0,0,0,0,213416,0,0,38932,4185,46,0,0,16400,0,0,0,4096,0
+20,1.23,0.66,75%,02.52,0,0,0,0,213408,0,0,38923,4156,70,0,0,16392,0,0,0,4096,0
+24,1.32,0.65,77%,02.56,0,0,0,0,212544,0,0,38944,4681,67,0,0,16392,0,0,0,4096,0

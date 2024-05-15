@@ -111,3 +111,57 @@ Since the project requires the creation of a hybrid script, we could start by in
 
 The MPI integration allows the calculation to be distributed over several nodes in the cluster. Each node will calculate a part of the final image.
 
+
+
+## Conclusion
+
+1. **Computational Efficiency**:
+    - OpenMP: Shows a significant improvement in execution time with the initial increase in the number of threads, but quickly reaches a saturation point. Efficiency decreases when the number of threads exceeds the number of physical cores, suggesting scalability limitations due to hardware resource saturation and context management.
+    - MPI: Efficiency increases up to a certain point with the addition of processes, but shows peaks of inefficiency at certain levels of parallelisation, especially at 24 processes. This is indicative of significant overhead in handling communication and synchronisation between distributed processes.
+
+2. **Bottlenecks**:
+    - OpenMP: The main bottlenecks are related to memory management and synchronisation between threads, with a significant drop in major page faults and a stabilisation in unintentional context switches as threads increase.
+    - MPI: Shows increases in major page faults and unintentional context switches with the addition of processes, indicating pressures on memory and inefficiencies in CPU scheduling due to more complex management of context and inter-process communication.
+
+3. **Parallelisation Impact**:
+    - OpenMP: The effective CPU utilisation increases with the addition of threads, but the execution time stabilises, indicating that beyond a certain number of threads, the addition of further threads does not bring significant benefits.
+    - MPI: CPU utilisation improves almost linearly with increasing number of processes, but execution time shows peaks of inefficiency, suggesting that resource management and communication between processes may become problematic with a high number of processes.
+
+General considerations:
+
+- **Scalability**: OpenMP is generally more effective in improving execution time up to a certain number of cores on a single node, while MPI scales better on distributed systems, albeit with a higher communication overhead.
+- **Simplicity of Implementation**: OpenMP tends to be simpler to implement for parallelism on a single node, whereas MPI requires more complex management but is essential for computation on multiple nodes.
+- **Resource Utilisation**: OpenMP may suffer from scalability problems related to resource saturation of a single node, such as memory and CPU bandwidth. MPI, on the other hand, can exploit resources of multiple nodes but requires efficient management of communication and synchronisation to minimise overhead.
+
+In the context of parallel computing, strong scalability and weak scalability analyses provide crucial metrics for evaluating the effectiveness of parallelisation methods such as OpenMP and MPI. Understanding how these two approaches handle scalability can help to outline optimal strategies for their use. Here is an overview of both types of scalability and how OpenMP and MPI perform in each scenario:
+
+### Strong Scalability
+
+- Definition: Strong scalability occurs when the total problem remains constant while the number of processors (or threads) increases. In this scenario, the focus is on reducing the execution time while keeping the problem size unchanged.
+- OpenMP: Generally shows good strong scalability until the number of threads exceeds the number of physical cores. Beyond this point, efficiency may decrease due to thread management overhead and competition for limited hardware resources, as shown by the data with a plateau in execution time.
+- MPI: Strong scalability may be more complex to achieve due to the overhead introduced by communication between processes, especially on multiple nodes. However, MPI can effectively handle strong scalability on larger distributed systems if communication is optimised and data is distributed equally.
+
+### Weak Scalability
+
+- Definition: Weak scalability occurs when the problem size per processor (or thread) remains constant while the total number of processors increases. The goal is to keep the execution time constant while the total problem size increases.
+- OpenMP: Can handle weak scalability well up to a certain point, especially on machines with a large number of cores. However, problems such as memory and bandwidth saturation can become limiting when the problem per thread becomes too large.
+- MPI: It is often better suited for weak scaling on a large scale due to its ability to distribute the workload over a large number of processes and nodes. The challenge remains in optimising problem partitioning and communication to maintain a uniform execution time.
+
+### Practical Implications
+
+**OpenMP**:
+
+- Good for problems that can be decomposed into work units that can be handled efficiently on a single node.
+- Less effective when the number of threads exceeds the number of available cores due to scheduling overhead and competition for resources.
+
+**MPI**:
+
+- Scalable on distributed architectures, ideal for problems requiring large amounts of distributed computing and data.
+- Requires attention to data decomposition and algorithm design to minimise communication and maximise efficiency.
+
+### Optimal Strategies
+
+- For OpenMP, the optimal strategy is to limit the number of threads to the number of physical cores and exploit data locality to maximise cache efficiency.
+- For MPI, it is essential to optimise workload distribution and communication, using techniques such as dynamic load balancing and efficient data decomposition algorithms.
+
+The choice between OpenMP and MPI should be based on the nature of the problem, the topology of the available computing system, and the specific performance and scalability goals. While OpenMP is ideal for optimisation and efficiency on a single node with multi-threading, MPI is indispensable for applications that need to scale across multiple nodes, despite the additional cost in terms of communication management.
