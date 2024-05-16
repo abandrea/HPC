@@ -34,6 +34,21 @@ int main(int argc, char **argv) {
     double scale_y = radius / height * 4;
     int max_iterations = 1000;  // Consider adjusting based on command-line input
 
+    // parse command-line arguments
+    // if (argc == 8) {
+    //     width = atoi(argv[1]); // n_x
+    //     height = atoi(argv[2]); // n_y
+    //     center_x = atof(argv[3]); // x_L
+    //     center_y = atof(argv[4]); // y_L
+    //     radius = atof(argv[5]); 
+    //     scale_x = radius / width * 4; // x_R
+    //     scale_y = radius / height * 4; // y_R
+    //     max_iterations = atoi(argv[6]); // I_max
+    // } else if (argc != 1) {
+    //     fprintf(stderr, "Usage: %s <width> <height> <center_x> <center_y> <radius> <max_iterations>\n", argv[0]);
+    //     MPI_Abort(MPI_COMM_WORLD, 1);
+    // }
+
     int rows_per_proc = height / size;
     int rem_rows = height % size;
     int local_start = rows_per_proc * rank;

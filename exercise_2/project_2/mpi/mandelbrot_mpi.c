@@ -42,6 +42,21 @@ int main(int argc, char **argv) {
     double scale_x = radius / width * 4;
     double scale_y = radius / height * 4;
 
+    // parse command-line arguments
+    // if (argc == 8) {
+    //     width = atoi(argv[1]); // n_x
+    //     height = atoi(argv[2]); // n_y
+    //     center_x = atof(argv[3]); // x_L
+    //     center_y = atof(argv[4]); // y_L
+    //     radius = atof(argv[5]); 
+    //     scale_x = radius / width * 4; // x_R
+    //     scale_y = radius / height * 4; // y_R
+    //     max_iterations = atoi(argv[6]); // I_max
+    // } else if (argc != 1) {
+    //     fprintf(stderr, "Usage: %s <width> <height> <center_x> <center_y> <radius> <max_iterations>\n", argv[0]);
+    //     MPI_Abort(MPI_COMM_WORLD, 1);
+    // }
+
     // each process will compute its own portion of the image
     int rows_per_process = height / size;
     int extra_rows = height % size;

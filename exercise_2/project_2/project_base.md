@@ -48,6 +48,7 @@ Function in C to compute whether a point belongs to the Mandelbrot set.
 
 - Complex Number Operations: Recall that the Madelbrot set computation involves complex number arithmetic, particularly squaring complex numbers and adding them. In C, will be managed by representig a complex number $c = x + iy$ using two doubles for the real (x) and imaginary (y) parts.
 - Iterative Calculation: For each point $c$ on the complex plane, iterate the function $f_c(z) = z^2 + c$, starting with $z = 0$, until either the magnitude of $z$ exceeds 2 (indicating the sequence will diverge) or a maximum number of iterations in reached.
+
 **Desiderable functions**
 
 - Complex Number Calculation: The Mandelbrot function computes $z$ for each iteration from 0 to `max_iter` or unitl $|z|$ exceeds 2 (for example, $|z|^2 > 4$).
