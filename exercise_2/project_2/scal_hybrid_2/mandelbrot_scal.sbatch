@@ -16,10 +16,10 @@ module load openMPI/4.1.5/gnu/12.2.1
 mpicc -o mandelbrot_hybrid -fopenmp mandelbrot_mpi_omp.c
 
 
-# Esegui il programma variando sia il numero di processi MPI che di thread OpenMP
+## Executing the program with different number of MPI processes and OpenMP threads
 for procs in 2 4 8 16 24
 do
-   for threads in 1 2
+   for threads in 1 2 4 8 12
    do
       export OMP_NUM_THREADS=$threads
       echo "Running with $procs MPI processes and $threads OpenMP threads:"
