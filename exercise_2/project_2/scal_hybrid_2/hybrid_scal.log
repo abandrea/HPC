@@ -1,0 +1,575 @@
+	Command being timed: "mpirun -np 2 ./mandelbrot_hybrid"
+	User time (seconds): 1.24
+	System time (seconds): 1.53
+	Percent of CPU this job got: 38%
+	Elapsed (wall clock) time (ss): 07.18
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 211532
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 114
+	Minor (reclaiming a frame) page faults: 81711
+	Voluntary context switches: 7372
+	Involuntary context switches: 960
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16392
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "mpirun -np 2 ./mandelbrot_hybrid"
+	User time (seconds): 1.08
+	System time (seconds): 1.01
+	Percent of CPU this job got: 54%
+	Elapsed (wall clock) time (ss): 03.83
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 211528
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 7
+	Minor (reclaiming a frame) page faults: 78282
+	Voluntary context switches: 7038
+	Involuntary context switches: 829
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16392
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "mpirun -np 2 ./mandelbrot_hybrid"
+	User time (seconds): 1.09
+	System time (seconds): 1.01
+	Percent of CPU this job got: 55%
+	Elapsed (wall clock) time (ss): 03.81
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 211516
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 1
+	Minor (reclaiming a frame) page faults: 78355
+	Voluntary context switches: 7007
+	Involuntary context switches: 817
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16392
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "mpirun -np 2 ./mandelbrot_hybrid"
+	User time (seconds): 1.12
+	System time (seconds): 0.99
+	Percent of CPU this job got: 55%
+	Elapsed (wall clock) time (ss): 03.82
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 211696
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 4
+	Minor (reclaiming a frame) page faults: 78395
+	Voluntary context switches: 7014
+	Involuntary context switches: 915
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16392
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "mpirun -np 2 ./mandelbrot_hybrid"
+	User time (seconds): 1.07
+	System time (seconds): 1.03
+	Percent of CPU this job got: 54%
+	Elapsed (wall clock) time (ss): 03.85
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 211532
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 6
+	Minor (reclaiming a frame) page faults: 78366
+	Voluntary context switches: 7050
+	Involuntary context switches: 938
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16392
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "mpirun -np 4 ./mandelbrot_hybrid"
+	User time (seconds): 2.12
+	System time (seconds): 2.06
+	Percent of CPU this job got: 108%
+	Elapsed (wall clock) time (ss): 03.84
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 208888
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 18
+	Minor (reclaiming a frame) page faults: 148292
+	Voluntary context switches: 14624
+	Involuntary context switches: 251
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16392
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "mpirun -np 4 ./mandelbrot_hybrid"
+	User time (seconds): 1.84
+	System time (seconds): 2.08
+	Percent of CPU this job got: 106%
+	Elapsed (wall clock) time (ss): 03.68
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 208912
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 11
+	Minor (reclaiming a frame) page faults: 148455
+	Voluntary context switches: 14429
+	Involuntary context switches: 255
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16392
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "mpirun -np 4 ./mandelbrot_hybrid"
+	User time (seconds): 1.86
+	System time (seconds): 2.05
+	Percent of CPU this job got: 114%
+	Elapsed (wall clock) time (ss): 03.44
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 209164
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 4
+	Minor (reclaiming a frame) page faults: 148258
+	Voluntary context switches: 14494
+	Involuntary context switches: 287
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16392
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "mpirun -np 4 ./mandelbrot_hybrid"
+	User time (seconds): 2.22
+	System time (seconds): 2.01
+	Percent of CPU this job got: 119%
+	Elapsed (wall clock) time (ss): 03.56
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 208772
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 1
+	Minor (reclaiming a frame) page faults: 148290
+	Voluntary context switches: 14345
+	Involuntary context switches: 316
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16392
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "mpirun -np 4 ./mandelbrot_hybrid"
+	User time (seconds): 2.91
+	System time (seconds): 2.01
+	Percent of CPU this job got: 140%
+	Elapsed (wall clock) time (ss): 03.51
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 208680
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 5
+	Minor (reclaiming a frame) page faults: 148390
+	Voluntary context switches: 14496
+	Involuntary context switches: 393
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16392
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "mpirun -np 8 ./mandelbrot_hybrid"
+	User time (seconds): 3.22
+	System time (seconds): 3.99
+	Percent of CPU this job got: 189%
+	Elapsed (wall clock) time (ss): 03.80
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 185520
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 19
+	Minor (reclaiming a frame) page faults: 287103
+	Voluntary context switches: 33332
+	Involuntary context switches: 468
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16392
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "mpirun -np 8 ./mandelbrot_hybrid"
+	User time (seconds): 2.62
+	System time (seconds): 3.98
+	Percent of CPU this job got: 182%
+	Elapsed (wall clock) time (ss): 03.61
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 185260
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 17
+	Minor (reclaiming a frame) page faults: 287147
+	Voluntary context switches: 31275
+	Involuntary context switches: 470
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16392
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "mpirun -np 8 ./mandelbrot_hybrid"
+	User time (seconds): 2.73
+	System time (seconds): 3.99
+	Percent of CPU this job got: 199%
+	Elapsed (wall clock) time (ss): 03.36
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 185448
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 12
+	Minor (reclaiming a frame) page faults: 286853
+	Voluntary context switches: 29775
+	Involuntary context switches: 532
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16392
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "mpirun -np 8 ./mandelbrot_hybrid"
+	User time (seconds): 3.40
+	System time (seconds): 3.87
+	Percent of CPU this job got: 211%
+	Elapsed (wall clock) time (ss): 03.44
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 185400
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 14
+	Minor (reclaiming a frame) page faults: 287232
+	Voluntary context switches: 29538
+	Involuntary context switches: 875
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16392
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "mpirun -np 8 ./mandelbrot_hybrid"
+	User time (seconds): 4.40
+	System time (seconds): 4.05
+	Percent of CPU this job got: 238%
+	Elapsed (wall clock) time (ss): 03.55
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 185516
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 16
+	Minor (reclaiming a frame) page faults: 287228
+	Voluntary context switches: 29183
+	Involuntary context switches: 1857
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16392
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "mpirun -np 16 ./mandelbrot_hybrid"
+	User time (seconds): 3.84
+	System time (seconds): 6.07
+	Percent of CPU this job got: 251%
+	Elapsed (wall clock) time (ss): 03.93
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 202796
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 22
+	Minor (reclaiming a frame) page faults: 426897
+	Voluntary context switches: 80716
+	Involuntary context switches: 716
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16392
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "mpirun -np 16 ./mandelbrot_hybrid"
+	User time (seconds): 3.32
+	System time (seconds): 6.51
+	Percent of CPU this job got: 268%
+	Elapsed (wall clock) time (ss): 03.65
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 202700
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 33
+	Minor (reclaiming a frame) page faults: 426750
+	Voluntary context switches: 57805
+	Involuntary context switches: 685
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16392
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "mpirun -np 16 ./mandelbrot_hybrid"
+	User time (seconds): 3.50
+	System time (seconds): 6.20
+	Percent of CPU this job got: 275%
+	Elapsed (wall clock) time (ss): 03.52
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 202828
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 32
+	Minor (reclaiming a frame) page faults: 426831
+	Voluntary context switches: 62529
+	Involuntary context switches: 1104
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16392
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "mpirun -np 16 ./mandelbrot_hybrid"
+	User time (seconds): 4.59
+	System time (seconds): 6.34
+	Percent of CPU this job got: 310%
+	Elapsed (wall clock) time (ss): 03.52
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 202508
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 38
+	Minor (reclaiming a frame) page faults: 426920
+	Voluntary context switches: 54897
+	Involuntary context switches: 1911
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16392
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "mpirun -np 16 ./mandelbrot_hybrid"
+	User time (seconds): 6.35
+	System time (seconds): 5.80
+	Percent of CPU this job got: 329%
+	Elapsed (wall clock) time (ss): 03.69
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 202968
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 22
+	Minor (reclaiming a frame) page faults: 427094
+	Voluntary context switches: 74935
+	Involuntary context switches: 2766
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16392
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "mpirun -np 24 ./mandelbrot_hybrid"
+	User time (seconds): 11.15
+	System time (seconds): 9.91
+	Percent of CPU this job got: 381%
+	Elapsed (wall clock) time (ss): 05.52
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 227956
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 15
+	Minor (reclaiming a frame) page faults: 430640
+	Voluntary context switches: 107943
+	Involuntary context switches: 701
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16400
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 134
+	Command being timed: "mpirun -np 24 ./mandelbrot_hybrid"
+	User time (seconds): 10.79
+	System time (seconds): 9.56
+	Percent of CPU this job got: 391%
+	Elapsed (wall clock) time (ss): 05.19
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 228200
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 20
+	Minor (reclaiming a frame) page faults: 430590
+	Voluntary context switches: 94493
+	Involuntary context switches: 754
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16400
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 134
+	Command being timed: "mpirun -np 24 ./mandelbrot_hybrid"
+	User time (seconds): 11.29
+	System time (seconds): 9.73
+	Percent of CPU this job got: 398%
+	Elapsed (wall clock) time (ss): 05.27
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 228004
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 19
+	Minor (reclaiming a frame) page faults: 430709
+	Voluntary context switches: 100920
+	Involuntary context switches: 1242
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16400
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 134
+	Command being timed: "mpirun -np 24 ./mandelbrot_hybrid"
+	User time (seconds): 12.51
+	System time (seconds): 10.03
+	Percent of CPU this job got: 16%
+	Elapsed (wall clock) time (ss): 05.36
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 228568
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 36
+	Minor (reclaiming a frame) page faults: 430775
+	Voluntary context switches: 97042
+	Involuntary context switches: 1664
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16400
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 134
+	Command being timed: "mpirun -np 24 ./mandelbrot_hybrid"
+	User time (seconds): 13.88
+	System time (seconds): 9.81
+	Percent of CPU this job got: 435%
+	Elapsed (wall clock) time (ss): 05.44
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 228288
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 22
+	Minor (reclaiming a frame) page faults: 430990
+	Voluntary context switches: 102545
+	Involuntary context switches: 2667
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16408
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 134
