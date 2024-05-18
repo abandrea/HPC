@@ -32,8 +32,8 @@ int main(int argc, char **argv) {
     double center_x = -0.75, center_y = 0.0;
     double radius = 2.0;
     int max_iterations = 1000;
-    double scale_x = radius / width * 4;
-    double scale_y = radius / height * 4;
+    double scale_x = radius / width * 2;
+    double scale_y = radius / height * 2;
 
     //parse command-line arguments
     if (argc == 8) {
@@ -67,7 +67,7 @@ int main(int argc, char **argv) {
     }
 
     // Write to PGM
-    FILE *file = fopen("mandelbrot_4096.pgm", "wb");
+    FILE *file = fopen("mandelbrot_test.pgm", "wb");
     if (file == NULL) {
         perror("Failed to open file");
         free(image);

@@ -25,6 +25,3 @@ do
 done
 
 echo "OpenMP scalability test completed."
-
-
-

@@ -30,8 +30,8 @@ int main(int argc, char **argv) {
     int width = 2048, height = 2048;
     double center_x = -0.75, center_y = 0.0;
     double radius = 2.0;
-    double scale_x = radius / width * 4;
-    double scale_y = radius / height * 4;
+    double scale_x = radius / width * 2;
+    double scale_y = radius / height * 2;
     int max_iterations = 1000;  // Consider adjusting based on command-line input
 
     // parse command-line arguments
