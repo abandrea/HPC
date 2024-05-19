@@ -56,6 +56,8 @@ With those notes in mind, we can expand basic Mandelbrot set computation to more
 
 ## Reason behind the choice of this project
 
+*"Bottomless wonders spring from simple rules which are repeated without end." - Benoît B. Mandelbrot, the father of fractal geometry (TED Talk, 02/2010).*
+
 Implementing the Mandelbrot set calculation project is intriguing for several reasons. Firstly, it allows for the visualization of complex dynamics, providing a fascinating insight into fractal geometry and iterative processes involving complex numbers. The computational challenge of generating high-resolution images of the Mandelbrot set requires significant computational power, making it an excellent problem for exploring computational methods and performance optimization. 
 
 The Mandelbrot set problem is inherently parallelisable since the calculation for each point in the complex plane is independent of others. This characteristic makes it ideal for testing parallel computing techniques. By utilizing a hybrid approach combining MPI (Message Passing Interface) and OpenMP (Open Multi-Processing), we can leverage the strengths of both distributed and shared memory architectures. MPI is used to handle communication between nodes in a cluster, while OpenMP manages parallelism within each node. This hybrid parallelism approach is well-suited for high-performance computing (HPC) clusters.
@@ -69,7 +71,7 @@ The techniques and insights gained from this project have broader applications b
 Since the Mandelbrot set resides within a circle centered around $(-0.75, 0)$ with a radius of $\sim 2$, we can set our program to generate a grid of points around this region to visualize the set. To do this efficiently and effectively, it is possible to start by computing a range of points that covers this area.
 
 **Implementation steps**:
-1. Setup a grid: Defining a grid of complex nubers centered around $(-0.75, 0)$ with a radius of $\sim 2$.
+1. Setup a grid: Defining a grid of complex numbers centered around $(-0.75, 0)$ with a radius of $\sim 2$.
 2. Iterating over each point: For each point on this grid, it is possible to determine whether it belongs to the Mandelbrot set using the iterative method.
 
 For the first test, it was implemented a simple script where the program writes the output to a file in txt format, in ASCII mode. 
@@ -295,7 +297,7 @@ done
 
 ## Conclusion
 
-This investigation into the scalability of the Mandelbrot set computation using a hybrid MPI and OpenMP setup reveals several key insights into efficiency, bottlenecks, and parallelization impact.
+This investigation into the scalability of the Mandelbrot set computation using a hybrid MPI and OpenMP setup reveals several key insights into efficiency, bottlenecks, and parallelisation impact.
 
 ### Efficiency
 
@@ -317,3 +319,16 @@ The best performance for the Mandelbrot set computation is achieved with 4-8 MPI
 - Optimize memory access patterns to reduce major page faults and improve overall efficiency.
 - Conduct additional tests with configurations around 4-8 MPI processes and 4-8 OpenMP threads to refine the optimal setup.
 - Use profiling tools to identify and optimize specific functions or operations causing inefficiencies.
+
+## References
+
+1.  [Mandelbrot Set - Wikipedia](https://en.wikipedia.org/wiki/Mandelbrot_set)
+
+2.  [Mandelbrot Set - Wolfram MathWorld](https://mathworld.wolfram.com/MandelbrotSet.html)
+
+3.  [Message Passing Interface (MPI) - Official Website](https://www.mpi-forum.org/)
+
+4.  [Open Multi-Processing (OpenMP) - Official Website](https://www.openmp.org/)
+
+5.  [High Performance Computing - ORFEO Cluster](https://orfeo-doc.areasciencepark.it/HPC/)
+

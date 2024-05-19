@@ -41,7 +41,7 @@ tar -xzvf osu-micro-benchmarks-7.3.tar.gz
 After loading the necessary modules, it is possible to compile the `osu-micro-benchmarks` tool using the following commands (inside the extracted folder):
 
 ```bash
-$ ./configure CC=mpicc CXX=mpicxx  # Ensure these are the MPI compilers
+$ ./configure CC=mpicc CXX=mpicxx 
 $ make
 ```
 In order to don't repeat the same commands every time, it is possible to create a script that loads the necessary modules automatically. What was done in my case was to create a script called `.bashrc`:
