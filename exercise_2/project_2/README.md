@@ -56,6 +56,9 @@ With those notes in mind, we can expand basic Mandelbrot set computation to more
 
 ## Reason behind the choice of this project
 
+![](figures/DjXq.gif)
+
+
 *"Bottomless wonders spring from simple rules which are repeated without end." - Benoît B. Mandelbrot, the father of fractal geometry (TED Talk, 02/2010).*
 
 Implementing the Mandelbrot set calculation project is intriguing for several reasons. Firstly, it allows for the visualization of complex dynamics, providing a fascinating insight into fractal geometry and iterative processes involving complex numbers. The computational challenge of generating high-resolution images of the Mandelbrot set requires significant computational power, making it an excellent problem for exploring computational methods and performance optimization. 
