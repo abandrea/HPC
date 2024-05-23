@@ -2,7 +2,6 @@
 title: "High Performance Computing - Exercise 1"
 subtitle: "Compare different openMPI algorithms for collective operations"
 author: "Andrea Buscema"
-date: "30/05/2024"
 output: pdf_document
 header-includes:
    - \usepackage{float}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.9)  10 MAY 2024 18:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.19)  23 MAY 2024 13:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -655,14 +655,14 @@ LaTeX Warning: There were multiply-defined labels.
  ) 
 Here is how much of TeX's memory you used:
  13811 strings out of 476010
- 220412 string characters out of 5790013
- 1941751 words of memory out of 5000000
+ 220412 string characters out of 5790012
+ 1940751 words of memory out of 5000000
  35717 multiletter control sequences out of 15000+600000
  617402 words of font info for 83 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  89i,9n,93p,1065b,464s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </Users/andrea.buscema/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></Users/andrea.buscema/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></Users/andrea.buscema/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx7.pfb></Users/andrea.buscema/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></Users/andrea.buscema/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb></Users/andrea.buscema/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb></Users/andrea.buscema/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb></Users/andrea.buscema/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr7.pfb></Users/andrea.buscema/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr9.pfb></Users/andrea.buscema/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></Users/andrea.buscema/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></Users/andrea.buscema/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtk10.pfb></Users/andrea.buscema/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></Users/andrea.buscema/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtti10.pfb>
-Output written on BUSCEMA_report.pdf (10 pages, 1331214 bytes).
+Output written on BUSCEMA_report.pdf (10 pages, 1329997 bytes).
 PDF statistics:
  285 PDF objects out of 1000 (max. 8388607)
  217 compressed objects within 3 object streams
