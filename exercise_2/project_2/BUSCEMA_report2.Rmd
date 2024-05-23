@@ -14,7 +14,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Introduction
 
-In this report, will be discussed the results of the second exercise of the High Performance Computing assignment. The objective of this exercise is to implement the Mandelbrot Set using MPI and OpenMP, obtaining a single pgm image as output, and analysing the scalability of the implementation: - OMP scaling: run with a single MPI task and increase the number of OMP threads; - MPI scaling: run with a single OMP thread per MPI task and increase the number of MPI tasks; - Hybrid scaling (such an extra analysis - not required for the assignment): run for different combinations of MPI and OMP threads.
+In this report, will be discussed the results of the second exercise of the High Performance Computing assignment. The objective of this exercise is to implement the Mandelbrot Set using MPI and OpenMP, obtaining a single pgm image as output, and analysing the scalability of the implementation: OMP scaling: run with a single MPI task and increase the number of OMP threads; MPI scaling: run with a single OMP thread per MPI task and increase the number of MPI tasks; Hybrid scaling (such an extra analysis - not required for the assignment): run for different combinations of MPI and OMP threads.
 
 As for the first exercise/assignment, the project was implemented to be used in the ORFEO HPC Cluster, using THIN nodes. The project was implemented in C language, using the MPI and OpenMP libraries, SLURM for job submission (file .sbatch), and Python for data analysis and plotting.
 
