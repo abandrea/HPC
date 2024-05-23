@@ -207,7 +207,7 @@ Cons:
 
 From the broadcast benchmarks csv file, it is possible to analyse the latency for processes (cores) and for different message sizes. As a first look, it is possible to see that the latency increases with the number of processes and the message size, as expected. From figure 1, it is possible to see that, for a message size of 2 bytes, the latency is lower than for a message size of 1 MB. This is because the message size affects the time it takes to send the message over the network. The latency increases with the message size because it takes longer to send a larger message over the network. 
 
-![Figure 1 - Latency vs Processes for Basic Linear Algorithm](figures/figure_1.png){width=50%}
+![Figure 1 - Latency vs Processes for Basic Linear Algorithm](figures/figure_1.png)
 
 ## Chain Algorithm
 
