@@ -374,3 +374,19 @@ Using the same performance model as before, it is possible to compare for the sa
 ![Figure 11 - Comparison of Benchmark Results with Performance Model](figures/figure_11.png)
 
 From the figure 11, as analysed, it is possible to constat the efficiency of the `basic_linear` algorithm for this fixed message size took for the analysis, slightly outperforming the `chain` algorithm in terms of maintaining lower latency across all process counts considering both the performance model of the latency between the core, socket and node mapping. The `pipeline` algorithm, from the other side, shows the highest latency across all process counts.
+
+## References
+
+1. [Orfeo Cluster Documentation](https://orfeo-doc.areasciencepark.it/HPC/computational-resources/)
+
+2. [OSU Micro-Benchmarks](https://mvapich.cse.ohio-state.edu/benchmarks/)
+
+3. [The Missing Semester of Your CS Education](https://missing.csail.mit.edu/)
+
+4. [SLURM Workload Manager](https://slurm.schedmd.com/)
+
+5. [LMOD Module System](https://lmod.readthedocs.io/en/latest/)
+
+6. [MPI Collective Operations](https://www.mpi-forum.org/docs/mpi-3.1/mpi31-report/node109.htm)
+
+7. [Model-based selection of optimal MPI broadcast algorithms for multi-core clusters](https://www.sciencedirect.com/science/article/pii/S0743731522000697?via%3Dihub)
