@@ -7,13 +7,14 @@ University of Trieste
 
 # Task 1: Compare different openMPI algorithms for collective operations
 
-This is the first assignment for Prof. Cozzini section of the 2023/2024 HPC course. The objective of this exercise is to compare and evaluate the performance of different openMPI algorithms for two different collective operations, `broadcast` that is the mandatory one, and one between `gather`, `scatter`, `barrier`, `reduce`. It is needed to estimate the latency of default openMPI implementation, varying the number of processes and the size of the messages exchanged and then compare this latter with the values obtained using different algorithms. For this task, it is needed to use a well-known MPI benchmark tool, like `osu-micro-benchmarks` and run them on at least two nodes of the ORFEO cluster, choosing among `epyc`, `thin` and `fat`, using all the available cores on a single node.
+This is the first assignment for Prof. Cozzini section of the 2023/2024 HPC course. The objective of this exercise is to compare and evaluate the performance of different openMPI algorithms for two different collective operations, `broadcast` that is the mandatory one, and one between `gather`, `scatter`, `barrier`, `reduce`. It is needed to estimate the latency of default openMPI implementation, varying the number of processes and the size of the messages exchanged and then compare this latter with the values obtained using different algorithms. For this task, it is needed to use a well-known MPI benchmark tool, like `osu-micro-benchmarks` and run them on at least two nodes of the ORFEO cluster, choosing among `EPYC`, `THIN` and `FAT`, using all the available cores on a single node.
 
 
 # Task 2: Mandelbrot Set using hydrid implementation MPI + OpenMP
 
 This is the second assignment for Prof. Tornatore section of the 2023/2024 HPC course. The objective of this exercise is to implement a parallel version of the Mandelbrot Set using a hybrid approach, combining MPI and OpenMP. The goal is to parallelize the computation of the Mandelbrot Set using MPI to distribute the work among different processes and OpenMP to exploit the parallelism within each process. The implementation should be able to generate the Mandelbrot Set for a given range of complex numbers and produce an image representing the set. The performance of the parallel implementation should be evaluated by measuring the execution time for different numbers of processes and threads, and comparing it with the sequential version. The implementation should be tested on the ORFEO cluster using multiple nodes and cores to assess its scalability and efficiency.
 
+--------------
 
 ## Things to know
 
